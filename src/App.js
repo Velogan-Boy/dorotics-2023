@@ -1,11 +1,18 @@
+import { ThemeProvider } from 'styled-components';
+
+import { lightTheme, GlobalStyles } from './themes';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Dorotics Website coming soon...</h1>
-    </div>
-  );
+   return (
+      <ThemeProvider theme={lightTheme}>
+         <GlobalStyles />
+         <div className="App">
+            <h1>Dorotics Website coming soon...</h1>
+         </div>
+      </ThemeProvider>
+   );
 }
 
 export default App;
