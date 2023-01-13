@@ -1,6 +1,6 @@
 import React from 'react';
-import Heading from '../../components/Heading/Heading';
-import SubHeading from '../../components/SubHeading/SubHeading';
+import Heading from '../../components/UI/Heading/Heading';
+import SubHeading from '../../components/UI/SubHeading/SubHeading';
 import styles from "./About.module.css";
 
 function About() {
