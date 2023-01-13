@@ -28,7 +28,6 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-
 }
 
 .navItems {
@@ -95,20 +94,18 @@
    text-transform: uppercase;
    font-size: 1rem;
    letter-spacing: 1px;
-   color: var(--bg);
+   background-color: transparent;
    position: fixed;
-   padding: 0.5rem 1rem;
+   top: 70%;
+   left: 0rem;
    transform: rotate(270deg) translateY(50%);
    z-index: 1001;
    font-weight: bold;
    transform-origin: 0;
    text-align: left;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.floater:hover {
-   color: var(--bg);
-   text-decoration: none;
+   display: flex;
+   gap: 1rem;
+   width: 100vh;
 }
 
 .floaterLink {
@@ -118,12 +115,14 @@
 
 .floater1 {
    background-color: var(--accent);
-   top: 35%;
+   padding: 0.5rem 1rem;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .floater2 {
    background-color: var(--secondary);
-   top: 62%;
+   padding: 0.5rem 1rem;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .activeMob {

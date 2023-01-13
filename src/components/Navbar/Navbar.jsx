@@ -83,16 +83,18 @@ function Navbar() {
             </div>
          </div>
 
-         <div className={`${styles.floater} ${styles.floater1}`}>
-            <Link className={styles.floaterLink} to="/submit">
-               Submit Papers
-            </Link>
-         </div>
+         <div className={styles.floater}>
+            <div className={`${styles.floater1}`}>
+               <Link className={styles.floaterLink} to="/submit">
+                  Submit Papers
+               </Link>
+            </div>
 
-         <div className={`${styles.floater} ${styles.floater2}`}>
-            <Link className={styles.floaterLink} to="/dates">
-               Important Dates
-            </Link>
+            <div className={`${styles.floater2}`}>
+               <Link className={styles.floaterLink} to="/dates">
+                  Important Dates
+               </Link>
+            </div>
          </div>
       </>
    );
