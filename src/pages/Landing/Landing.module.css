@@ -70,10 +70,10 @@
 }
 
 .footer {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/footer-bg.jpg');
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/images/footer-bg.jpg');
 
    background-size: cover;
-   background-position: center;
+   background-position: top;
    background-repeat: no-repeat;
    font-size: 1.2rem;
    padding: 0;
@@ -111,10 +111,9 @@
    min-height: 3.0rem;
    padding: 0 1rem;
    font-size: inherit;
-   /* border: 2px solid var(--secondary); */
+   border: 2px solid var(--secondary);
    border-radius: 15px 0 0 15px;
    background-color: var(--bg);
-   border: none;
 }
 
 .subscribeBtn {
@@ -235,6 +234,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+   
+   .bg{
+      height: 90vh;
+   }
    .heroText {
       font-size: 1.5rem;
       top: 40%;

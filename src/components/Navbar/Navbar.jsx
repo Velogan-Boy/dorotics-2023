@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+
 import styles from './Navbar.module.css';
 
 function Navbar() {
@@ -96,6 +97,7 @@ function Navbar() {
                </Link>
             </div>
          </div>
+
       </>
    );
 }

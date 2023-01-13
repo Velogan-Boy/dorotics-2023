@@ -1,6 +1,8 @@
 import React from 'react';
-
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+
+import FloatNextButton from '../../components/UI/FloatNextButton/FloatNextButton';
+
 
 import styles from './Landing.module.css';
 
@@ -50,6 +52,8 @@ function Landing() {
                <h2 className={styles.copyrights}>@ Copyright DOROTICS, All Right Reserved.</h2>
             </div>
          </div>
+         
+         <FloatNextButton link="/about" />
       </div>
    );
 }
