@@ -1,6 +1,7 @@
 .nav {
-   background-color: rgba(217, 217, 217, 1);
-   width: 100vw;
+   background-color: var(--bg);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   width: 100%;
    height: 4.5rem;
    display: flex;
    justify-content: space-between;
@@ -9,7 +10,7 @@
    position: fixed;
    top: 0;
    left: 0;
-   z-index: 100;
+   z-index: 1000;
 }
 
 .logo {
@@ -17,30 +18,29 @@
    width: 12rem;
 }
 
-.logoImg{
+.logoImg {
    width: 100%;
    height: 100%;
 }
 
 .navLinks {
    display: flex;
-   justify-content: flex-end;
+   justify-content: center;
    align-items: center;
    width: 100%;
+   
 }
 
 .navItems {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
-   width: 50%;
-   margin: auto;
    list-style: none;
 }
 
 .navItem {
    color: var(--primary);
-   margin: 0 1rem;
+   margin: 0 1.2rem;
    font-size: 1.1rem;
    cursor: pointer;
 }
@@ -86,9 +86,44 @@
    position: absolute;
    right: -20px;
    top: 0;
-   background-color: rgba(217, 217, 217, 0.8);
+   background-color: var(--bg);
    transition: all 0.5s ease;
    transform: translateX(900px);
+}
+
+.floater {
+   text-transform: uppercase;
+   font-size: 1rem;
+   letter-spacing: 1px;
+   color: var(--bg);
+   position: absolute;
+   padding: 0.5rem 1rem;
+   transform: rotate(270deg) translateY(50%);
+   z-index: 1001;
+   font-weight: bold;
+   transform-origin: 0;
+   text-align: left;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+}
+
+.floater:hover {
+   color: var(--bg);
+   text-decoration: none;
+}
+
+.floaterLink {
+   color: var(--bg);
+   text-decoration: none;
+}
+
+.floater1 {
+   background-color: var(--accent);
+   top: 35%;
+}
+
+.floater2 {
+   background-color: var(--secondary);
+   top: 62%;
 }
 
 .activeMob {
@@ -110,11 +145,10 @@
    margin-block: 1rem;
 }
 
-
 .nav_toggle {
    display: none;
    position: absolute;
-   right: 1rem;
+   right: 2rem;
    top: 22px;
    cursor: pointer;
    padding: 10px 35px 16px 0px;
@@ -157,14 +191,12 @@
    transform: rotate(-45deg);
 }
 
-
 @media only screen and (max-width: 999px) {
    .nav_mobile {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      
    }
 
    .navItems_mobile {
@@ -175,7 +207,7 @@
       display: block;
    }
    .nav {
-      padding: 0 1rem 0rem 0rem;
+      padding: 0 0rem 0rem 1rem;
    }
    .logo {
       width: 10rem;
@@ -200,5 +232,4 @@
    .nav-mobile {
       display: block;
    }
-  
 }

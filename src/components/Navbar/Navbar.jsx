@@ -51,14 +51,16 @@ function Navbar() {
       <>
          <div className={styles.nav}>
             <div className={styles.logo}>
-               <img src="/dorotics-logo.png" className={styles.logoImg} alt="Dorotics Logo" />
+               <a href="/">
+                  <img src="/dorotics-logo.png" className={styles.logoImg} alt="Dorotics Logo" />
+               </a>
             </div>
             <div className={styles.navLinks}>
                <a className={`${styles.nav_toggle}`} href="#!" onClick={toggleNav}>
                   <span></span>
                </a>
                <ul className={styles.navItems}>
-                  {navLinks.map((nav,idx) => (
+                  {navLinks.map((nav, idx) => (
                      <li key={idx} className={styles.navItem}>
                         <Link className={styles.navLink} to={nav.path}>
                            {nav.name}
@@ -79,6 +81,18 @@ function Navbar() {
                   ))}
                </ul>
             </div>
+         </div>
+
+         <div className={`${styles.floater} ${styles.floater1}`}>
+            <Link className={styles.floaterLink} to="/submit">
+               Submit Papers
+            </Link>
+         </div>
+
+         <div className={`${styles.floater} ${styles.floater2}`}>
+            <Link className={styles.floaterLink} to="/dates">
+               Important Dates
+            </Link>
          </div>
       </>
    );
