@@ -1,0 +1,65 @@
+.text {
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 1.3px;
+}
+
+.container {
+    position: relative;
+    width: max-content;
+    padding: 0.7rem 1rem;
+}
+
+.container:before,
+.container:after {
+    position: absolute;
+    content: ' ';
+    width: 25px;
+    height: 18px;
+    border-color: var(--secondary);
+    border-style: solid;
+}
+
+.container:before {
+    top: 0;
+    left: 0;
+    border-width: 7px 0 0 7px
+}
+
+.container:after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 7px 7px 0
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .container:before,
+    .container:after {
+        width: 20px;
+        height: 15px;
+    }
+
+    .container:before {
+        border-width: 5px 0 0 5px
+    }
+
+    .container:after {
+        border-width: 0 5px 5px 0
+    }
+}
