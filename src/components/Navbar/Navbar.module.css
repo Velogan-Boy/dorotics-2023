@@ -193,7 +193,7 @@
    transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1024px) {
    .nav_mobile {
       display: flex;
       flex-direction: column;
@@ -235,5 +235,9 @@
 
    .nav-mobile {
       display: block;
+   }
+   
+   .floater{
+      font-size: 0.7rem;
    }
 }

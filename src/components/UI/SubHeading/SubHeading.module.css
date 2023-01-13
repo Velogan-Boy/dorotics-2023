@@ -18,7 +18,7 @@
     content: ' ';
     width: 25px;
     height: 18px;
-    border-color: var(--secondary);
+    border-color: var(--accent);
     border-style: solid;
 }
 
