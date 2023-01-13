@@ -5,7 +5,7 @@ import { lightTheme, GlobalStyles } from './themes';
 
 // Pages
 import Landing from './pages/Landing/Landing'
-
+import About from "./pages/About/About";
 import Navbar from './components/Navbar/Navbar';
 
 import './App.css';
@@ -23,12 +23,12 @@ function App() {
       </ThemeProvider>
    );
 }
-                                                                
+
 const AllRoutes = () => {
    return (
       <Routes>
          <Route path="/" element={<Landing />} />
-         {/* <Route path="/about" element={<About />} /> */}
+         <Route path="/about" element={<About />} />
       </Routes>
    );
 };
