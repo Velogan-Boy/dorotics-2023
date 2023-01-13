@@ -17,10 +17,11 @@ export const darkTheme = {
 // Replace primary and secondary colors
 export const GlobalStyles = createGlobalStyle`
     :root {
-      --primary: #3d002d;
-      --secondary:#d7d7aa;
-      --tertiary:#58aaec;
-      --accent: #bcb1ff;
+      --primary: #3053A2;
+      --secondary:#4F7CE0;
+      --tertiary:#4FE0BF;
+      --accent: #EC6832;
+      --goldStripGradient: linear-gradient(90deg, #958130 0%, #D6CB49 100%);
       --text : ${(props) => props.theme.text};
       --backgroundText : ${(props) => props.theme.backgroundText};
       --bg : ${(props) => props.theme.bg};
