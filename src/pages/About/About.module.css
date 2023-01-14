@@ -1,5 +1,7 @@
 .wrapper {
     padding: 13.5rem 5.25rem 3.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .wrapper div:nth-child(2) {
