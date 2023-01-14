@@ -41,27 +41,31 @@ const RegisterTable = () => {
 
     return (
         <table className={styles.table}>
-            <tr className={styles.header}>
-                <th>
-                    CATEGORY
-                </th>
-                <th>
-                    PRESENTATION
-                </th>
-                <th>
-                    PARTICIPATION
-                </th>
-                <th>
-                    LINK
-                </th>
-            </tr>
-            {
-                register_details.map((detail, index) => {
-                    return (
-                        <TableItems row={detail} index={index} />
-                    )
-                })
-            }
+            <thead>
+                <tr className={styles.header}>
+                    <th>
+                        CATEGORY
+                    </th>
+                    <th>
+                        PRESENTATION
+                    </th>
+                    <th>
+                        PARTICIPATION
+                    </th>
+                    <th>
+                        LINK
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    register_details.map((detail, index) => {
+                        return (
+                            <TableItems row={detail} key={index} index={index} />
+                        )
+                    })
+                }
+            </tbody>
         </table>
     )
 }

@@ -25,15 +25,20 @@ const DateTable = () => {
 
     return (
         <table className={styles.table}>
-            <tr className={styles.header}>
-                <th className={styles.header_events}>EVENTS</th>
-                <th className={styles.header_dates}>DATES</th>
-            </tr>
-            {dates.map((date, index) => {
-                return (
-                    <TableItems row={date} index={index} />
-                )
-            })}
+            <thead>
+
+                <tr className={styles.header}>
+                    <th className={styles.header_events}>EVENTS</th>
+                    <th className={styles.header_dates}>DATES</th>
+                </tr>
+            </thead>
+            <tbody>
+                {dates.map((date, index) => {
+                    return (
+                        <TableItems row={date} key={index} index={index} />
+                    )
+                })}
+            </tbody>
         </table>
     )
 }

@@ -4,16 +4,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { lightTheme, GlobalStyles } from './themes';
 
 // Pages
-import Landing from './pages/Landing/Landing'
-import About from "./pages/About/About";
+import Landing from './pages/Landing/Landing';
+import About from './pages/About/About';
 import Navbar from './components/Navbar/Navbar';
 import Committee from './pages/Committees/Committee';
 import Tracks from './pages/Tracks/Tracks';
-import Dates from './pages/Dates/Dates';
 import Register from './pages/Register/Register';
+import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
+import Contact from './pages/Contact/Contact';
 
 import './App.css';
-import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
+import Keynotes from './pages/Keynotes/Keynotes';
+import Dates from './pages/Dates/Dates';
 
 function App() {
    return (
@@ -37,25 +39,12 @@ const AllRoutes = () => {
          <Route path="/committee" element={<Committee />} />
          <Route path="/tracks" element={<Tracks />} />
          <Route path="/paper-submission" element={<PaperSubmission />} />
-         <Route path="/dates" element={<Dates />} />
          <Route path="/register" element={<Register />} />
-         <Route
-            path="*"
-            element={
-               <div style={{ padding: "7rem 0rem", textAlign: "center" }}>
-                  <p style={{
-                     color: "rgb(119, 119, 119)",
-                     letterSpacing: "1.25px",
-                     fontSize: "1.5rem",
-                     lineHeight: "1.4"
-                  }}>Content will be updated soon!</p>
-               </div>
-            }
-         />
+         <Route path="/keynote" element={<Keynotes />} />
+         <Route path="/dates" element={<Dates />} />
+         <Route path="/contact-us" element={<Contact />} />
       </Routes>
    );
 };
 
-
 export default App;
-

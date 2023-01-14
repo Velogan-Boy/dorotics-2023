@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Heading from '../../components/UI/Heading/Heading'
 import SubHeading from '../../components/UI/SubHeading/SubHeading'
+import Footer from '../../components/Footer/Footer';
+import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import styles from "./Committee.module.css";
 import { committee_titles, committee_members } from '../../data';
 
@@ -14,7 +16,7 @@ const Committee = () => {
                 <div className={styles.container1}>
                     {
                         committee_titles.map((item) => {
-                            return <h3 className={activeCmte === item ? styles.active : ''}
+                            return <h3 key={item} className={activeCmte === item ? styles.active : ''}
                                 onClick={() => setActiveCmte(item)}
                             >
                                 {item.toUpperCase()}
@@ -26,14 +28,16 @@ const Committee = () => {
                     <SubHeading text={activeCmte.toUpperCase()} />
                     <div className={styles.table}>
                         {
-                            committee_members[activeCmte].map((item) => {
+                            committee_members[activeCmte].map((item, index) => {
                                 const [name, position, _] = item.split(/,(.*)/s);
-                                return <p><i>{name}</i>,{position}</p>
+                                return <p key={index}><i>{name}</i>,{position}</p>
                             })
                         }
                     </div>
                 </div>
             </div>
+            <Footer />
+            <FloatNextButton link="/tracks" />
         </div>
     )
 }

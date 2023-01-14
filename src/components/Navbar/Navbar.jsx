@@ -86,7 +86,7 @@ function Navbar() {
 
          <div className={styles.floater}>
             <div className={`${styles.floater1}`}>
-               <Link className={styles.floaterLink} to="/submit">
+               <Link className={styles.floaterLink} to="/paper-submission">
                   Submit Papers
                </Link>
             </div>

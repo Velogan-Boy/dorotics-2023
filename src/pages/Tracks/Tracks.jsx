@@ -1,6 +1,8 @@
 import React from 'react'
 import Heading from '../../components/UI/Heading/Heading'
 import SubHeading from '../../components/UI/SubHeading/SubHeading'
+import Footer from '../../components/Footer/Footer';
+import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import styles from "./Tracks.module.css"
 import { track_titles, track_topics } from '../../data'
 
@@ -28,6 +30,10 @@ const Tracks = () => {
                     </div>
                 })}
             </div>
+            
+            <Footer />
+            <FloatNextButton link="/paper-submission" />
+            
         </div>
     )
 }
