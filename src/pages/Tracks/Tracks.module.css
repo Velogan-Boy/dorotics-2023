@@ -1,0 +1,74 @@
+.section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 12.5rem 3.5rem 3.5rem 4.5rem;
+}
+
+.track {
+    margin: 3rem 0rem;
+    padding: 2.25rem 1rem;
+    border: 1px solid black;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.track h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(119, 119, 119);
+    letter-spacing: 0.7px;
+}
+
+.track h2 i {
+    font-style: normal;
+    color: var(--primary);
+}
+
+.track>div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.track ul {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    flex: 1;
+    color: rgb(119, 119, 119);
+    border: 2px solid rgb(168, 168, 168);
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.track ul li {
+    font-size: 1.2rem;
+    padding: 0.4rem 0rem;
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 700px) {
+    .section {
+        padding: 12.5rem 1.5rem 3.5rem 3.5rem;
+    }
+
+    .track>div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .track h2 {
+        font-size: 1.25rem;
+    }
+
+    .track ul {
+        margin: 1rem 0rem;
+    }
+
+    .track ul li {
+        font-size: 1rem;
+    }
+}

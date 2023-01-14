@@ -38,4 +38,69 @@ const committee_members = {
 
 };
 
-export { about, committee_titles, committee_members };
+const track_titles = [
+    "UAV Technology", "Robotics and its Applications", "Drone and Robotics",
+    "ICT Support systems for Drones and Robotics"
+];
+
+const track_topics = {
+    "UAV Technology": [
+        "UAV system design",
+        "UAV sensor Technology",
+        "Modelling and Simulation of UAVs",
+        "Swarm UAVs",
+        "UAV fault tolerant control",
+        "Stealth UAV",
+        "UAV Data processing",
+        "Obstacle sense and Avoidance",
+        "Simultaneous localization and mapping",
+        "Biomimicry Drones"
+    ],
+    "Robotics and its Applications": [
+        "Cobot", "Robotics and automation for Industry 5.0", "Socially-assistive Robotics",
+        "Multi-agent Robotics", "Evolutionary Modular Robotics", "Cooperative Robotics", "Agricultural Robotics",
+        "Disaster relief Robotics", "Entertainment Robotics", "Industrial Robotics", "Medical Robotics",
+        "Military Robotics", "Space Robotics", "Underwater Robotics", "Robots for Bore Well Rescue operation",
+        "Robotic scavenger", "Machine Learning for Autonomous Robots", "Legged Robot", "Autonomous Vehicles"
+    ],
+    "Drone and Robotics": [
+        "Intelligent flight path planning",
+        "Aerial robotics and UAV application",
+        "UAS for precision agriculture",
+        "UAS for digital humanity and cultural heritage preservation",
+        "Aerial robotics",
+        "Aerial robotics and engineering applications",
+        "Problems and challenges in aerial robotics",
+        "Autonomous aerial robot",
+        "ICT Supporting systems",
+        "HILS for UAS",
+        "SILS for UAS",
+        "Network centric UAS operations",
+        "RF communication for UAS",
+        "Antennas for UAS"
+    ],
+    "ICT Support systems for Drones and Robotics": [
+        "Drone AI technology (Object Detection, Object Counting, Image Segmentation, Image Classification, Change Detection)",
+        "Computer Vision for Drone and Robots",
+        "Machine Learning /Deep Learning for Drones and Robots",
+        "Planning/ Learning/Reasoning for Robots",
+        "Data Modelling and Analytics/ Data Visualization",
+        "Data Privacy and Security",
+        "AI, Robotics and Automation",
+        "Big Data Analytics/IoT/NLP/ Cloud Computing",
+        "Quantum Drones",
+        "Autonomous Navigation",
+        "AI solutions for mapping of Drones",
+        "Speech Recognition for Drone and Robots control",
+        "AI-Powered Drones",
+        "Real-Time systems for Drone Swarm",
+        "Communication Systems for Drone and Robotics",
+        "AI Drones applications in various sectors",
+        "AI solutions for damage assessment by drones",
+        "Role of AI for intelligent robots in Agriculture, Disaster Relief, Entertainment, Industry and thrust sectors",
+        "Recent Trends in Robotics and Computer Integrated Manufacturing",
+        "Block Chain Technology and Co-operative Robotics"
+    ]
+};
+
+export { about, committee_titles, committee_members, track_titles, track_topics };
