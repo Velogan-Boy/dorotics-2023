@@ -103,4 +103,13 @@ const track_topics = {
     ]
 };
 
-export { about, committee_titles, committee_members, track_titles, track_topics };
+const submissionGuidelines = {
+    desc: [
+        "Prospective authors are encouraged to submit their papers through ",
+        "Easy chair",
+        ". All the submissions sent must be original and should not have been published or under consideration for publication in any other journal."
+    ],
+    link: "https://easychair.org/conferences/?conf=dorotics2023"
+};
+
+export { about, committee_titles, committee_members, track_titles, track_topics, submissionGuidelines };

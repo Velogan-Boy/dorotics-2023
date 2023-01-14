@@ -11,6 +11,7 @@ import Committee from './pages/Committees/Committee';
 import Tracks from './pages/Tracks/Tracks';
 
 import './App.css';
+import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
 
 function App() {
    return (
@@ -33,6 +34,7 @@ const AllRoutes = () => {
          <Route path="/about" element={<About />} />
          <Route path="/committee" element={<Committee />} />
          <Route path="/tracks" element={<Tracks />} />
+         <Route path="/paper-submission" element={<PaperSubmission />} />
       </Routes>
    );
 };
