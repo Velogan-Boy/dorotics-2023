@@ -112,4 +112,54 @@ const submissionGuidelines = {
     link: "https://easychair.org/conferences/?conf=dorotics2023"
 };
 
-export { about, committee_titles, committee_members, track_titles, track_topics, submissionGuidelines };
+
+const dates = [
+    {
+        "event": "Paper Submission Due",
+        "date": "31st Jan 2023"
+    },
+    {
+        "event": "Notification of Acceptance",
+        "date": "20th Feb 2023"
+    },
+    {
+        "event": "Final camera-ready paper submission",
+        "date": "2nd Mar 2023"
+    },
+    {
+        "event": "Registration",
+        "date": "16th Mar 2023"
+    }
+]
+
+const register_details = [
+
+    {
+
+        "category": "Students",
+        "presentation": "INR 3000/-",
+        "participation": "INR 2000/-",
+        "link": " ",
+        "link_status": "CLOSED"
+    },
+
+    {
+
+        "category": "Academicians",
+        "presentation": "INR 5000/-",
+        "participation": "INR 3000/-",
+        "link": " ",
+        "link_status": "CLOSED"
+    },
+
+    {
+
+        "category": "Industry",
+        "presentation": "INR 7000/-",
+        "participation": "INR 4000/-",
+        "link": " ",
+        "link_status": "CLOSED"
+    }
+]
+
+export { about, committee_titles, committee_members, track_titles, track_topics, submissionGuidelines, dates, register_details };

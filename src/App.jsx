@@ -9,6 +9,8 @@ import About from "./pages/About/About";
 import Navbar from './components/Navbar/Navbar';
 import Committee from './pages/Committees/Committee';
 import Tracks from './pages/Tracks/Tracks';
+import Dates from './pages/Dates/Dates';
+import Register from './pages/Register/Register';
 
 import './App.css';
 import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
@@ -35,6 +37,8 @@ const AllRoutes = () => {
          <Route path="/committee" element={<Committee />} />
          <Route path="/tracks" element={<Tracks />} />
          <Route path="/paper-submission" element={<PaperSubmission />} />
+         <Route path="/dates" element={<Dates />} />
+         <Route path="/register" element={<Register />} />
          <Route
             path="*"
             element={
