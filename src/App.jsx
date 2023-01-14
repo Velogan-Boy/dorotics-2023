@@ -35,6 +35,19 @@ const AllRoutes = () => {
          <Route path="/committee" element={<Committee />} />
          <Route path="/tracks" element={<Tracks />} />
          <Route path="/paper-submission" element={<PaperSubmission />} />
+         <Route
+            path="*"
+            element={
+               <div style={{ padding: "7rem 0rem", textAlign: "center" }}>
+                  <p style={{
+                     color: "rgb(119, 119, 119)",
+                     letterSpacing: "1.25px",
+                     fontSize: "1.5rem",
+                     lineHeight: "1.4"
+                  }}>Content will be updated soon!</p>
+               </div>
+            }
+         />
       </Routes>
    );
 };
