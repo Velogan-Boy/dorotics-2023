@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Heading from '../../components/UI/Heading/Heading'
 import SubHeading from '../../components/UI/SubHeading/SubHeading'
+import Footer from '../../components/Footer/Footer';
+import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import styles from "./Committee.module.css";
 import { committee_titles, committee_members } from '../../data';
 
@@ -34,6 +36,8 @@ const Committee = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
+            <FloatNextButton link="/tracks" />
         </div>
     )
 }

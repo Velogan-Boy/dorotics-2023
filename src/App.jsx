@@ -9,6 +9,7 @@ import About from "./pages/About/About";
 import Navbar from './components/Navbar/Navbar';
 import Committee from './pages/Committees/Committee';
 import Tracks from './pages/Tracks/Tracks';
+import Contact from './pages/Contact/Contact';
 
 import './App.css';
 import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
@@ -35,6 +36,7 @@ const AllRoutes = () => {
          <Route path="/committee" element={<Committee />} />
          <Route path="/tracks" element={<Tracks />} />
          <Route path="/paper-submission" element={<PaperSubmission />} />
+         <Route path="/contact-us" element={<Contact/>} />
       </Routes>
    );
 };

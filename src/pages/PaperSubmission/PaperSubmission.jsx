@@ -1,6 +1,8 @@
 import React from 'react'
 import Heading from '../../components/UI/Heading/Heading'
 import SubHeading from '../../components/UI/SubHeading/SubHeading'
+import Footer from '../../components/Footer/Footer';
+import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import styles from "./PaperSubmission.module.css";
 import { submissionGuidelines } from '../../data';
 
@@ -21,6 +23,9 @@ const PaperSubmission = () => {
                     </a>
                 </div>
             </div>
+            
+            <Footer />
+            <FloatNextButton link="/register" />
         </div>
     )
 }
