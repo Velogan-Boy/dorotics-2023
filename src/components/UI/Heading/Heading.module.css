@@ -2,10 +2,14 @@
     position: fixed;
     width: 100%;
     margin-top: 4.5rem;
-    max-width: 100vw;
     padding: 1.8rem 0rem 1.8rem 5.25rem;
     background: var(--goldStripGradient);
     z-index: 2;
+}
+
+.zoomWrapper {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .title {
@@ -39,7 +43,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
     .heading {
         padding: 1.8rem 0rem;
         text-align: center;

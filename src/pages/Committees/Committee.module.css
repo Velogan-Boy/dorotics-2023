@@ -1,0 +1,117 @@
+.section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 13.5rem 3.5rem 3.5rem 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container1 {
+    flex: 0.45;
+    margin: 0rem 3rem 3rem 0rem;
+    padding: 1.7rem 1.3rem;
+    background: var(--secondary);
+    border-radius: 25px;
+}
+
+.container1 h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}
+
+.active {
+    -webkit-animation: text-shadow-drop-bottom 0.6s both;
+    animation: text-shadow-drop-bottom 0.6s both;
+}
+
+.container2 {
+    flex: 0.5;
+    padding-top: 1rem;
+    color: #6b6b6b;
+}
+
+.table {
+    margin-top: 1.5rem;
+    padding: 0rem 1.5rem;
+    border: 1px solid rgb(148, 148, 148);
+}
+
+.table p {
+    margin: 0;
+    padding: 1em 0em;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    letter-spacing: 1.2px;
+}
+
+.table p:last-child {
+    border: none;
+}
+
+.table p i {
+    font-style: normal;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+@-webkit-keyframes text-shadow-drop-bottom {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes text-shadow-drop-bottom {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1,
+    .container2 {
+        flex: none;
+    }
+
+    .container1 {
+        margin-right: 0em;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 13.5rem 2rem 3.5rem 3.5rem;
+    }
+
+    .container1 h3 {
+        font-size: 1.3rem;
+    }
+
+    .table p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container1 h3 {
+        font-size: 1.1rem;
+    }
+}

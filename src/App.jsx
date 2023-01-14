@@ -7,6 +7,7 @@ import { lightTheme, GlobalStyles } from './themes';
 import Landing from './pages/Landing/Landing'
 import About from "./pages/About/About";
 import Navbar from './components/Navbar/Navbar';
+import Committee from './pages/Committees/Committee';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ const AllRoutes = () => {
       <Routes>
          <Route path="/" element={<Landing />} />
          <Route path="/about" element={<About />} />
+         <Route path="/committee" element={<Committee />} />
       </Routes>
    );
 };
