@@ -4,7 +4,7 @@ import SubHeading from '../../components/UI/SubHeading/SubHeading'
 import Footer from '../../components/Footer/Footer';
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import styles from "./Tracks.module.css"
-import { track_titles, track_topics } from '../../data'
+import { track_description, track_titles, track_topics } from '../../data'
 
 const Tracks = () => {
     return (
@@ -12,6 +12,7 @@ const Tracks = () => {
             <Heading text="tracks" />
             <div className={styles.section}>
                 <SubHeading text="Themes and topics" />
+                <p className={styles.description}>{track_description}</p>
                 {track_titles.map((title, index) => {
                     const middleIndex = Math.ceil(track_topics[title].length / 2);
                     const firstHalf = track_topics[title].slice().splice(0, middleIndex);
@@ -30,10 +31,10 @@ const Tracks = () => {
                     </div>
                 })}
             </div>
-            
+
             <Footer />
             <FloatNextButton link="/paper-submission" />
-            
+
         </div>
     )
 }
