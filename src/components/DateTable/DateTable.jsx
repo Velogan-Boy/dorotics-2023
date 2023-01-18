@@ -10,7 +10,11 @@ const TableItems = (prop) => {
         <>
             <tr className={styles.content}>
                 <td className={styles.events}>{prop.row.event}</td>
-                <td className={styles.date}>{prop.row.date}</td>
+                <td className={styles.date}>
+                    {prop.row.date[0]}
+                    <sup>{prop.row.date[1]}</sup>
+                    {prop.row.date[2]}
+                </td>
             </tr>
             <tr>
                 <td colSpan={2}>

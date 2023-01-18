@@ -13,17 +13,22 @@ const PaperSubmission = () => {
             <div className={styles.section}>
                 <SubHeading text="Submission guidelines" />
                 <div className={styles.container}>
-                    <p>
-                        {submissionGuidelines.desc[0]}
-                        <i>{submissionGuidelines.desc[1]}</i>
-                        {submissionGuidelines.desc[2]}
-                    </p>
-                    <a href={submissionGuidelines.link} target="_blank" rel="noreferrer">
-                        {submissionGuidelines.link}
-                    </a>
+                    <div>
+                        <p>
+                            {submissionGuidelines.desc[0]}
+                            <i>{submissionGuidelines.desc[1]}</i>
+                            {submissionGuidelines.desc[2]}
+                        </p>
+                        <a href={submissionGuidelines.link} target="_blank" rel="noreferrer">
+                            Click here
+                        </a>
+                    </div>
+                    <div>
+                        <img src='/easy-chair.png' alt='Easy chair logo' />
+                    </div>
                 </div>
             </div>
-            
+
             <Footer />
             <FloatNextButton link="/register" />
         </div>

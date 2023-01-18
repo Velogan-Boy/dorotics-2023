@@ -5,11 +5,11 @@ const about = [
     needs of the society. Besides promoting research and disseminating knowledge gained there from, it \
     fosters cooperation between the academic and industrial communities."
     ,
-    "First National Symposium on Emerging Technologies in DOROTICS (Drones & Robotics) \
-    will be held in College of Engineering Guindy, Anna University, Chennai - 25 from April 4th to April \
-    6th 2023. This event is organized in view with the DOROTICS summit in association with the Board \
-    of International Aviation Games(BIAG), CTF and Robotics Club, CEG and Robotics Club, MIT, \
-    sponsored by CED, Anna University."
+    "First National Symposium on Emerging Technologies in DOROTICS (Drones &amp; Robotics) \
+    will be held in College of Engineering Guindy, Anna University, Chennai - 25 from March 30th to \
+    April 1st 2023. This event is organized in view with the DOROTICS summit in association with the \
+    Board of International Aviation Games(BIAG), CTF and Robotics Club, CEG and Robotics Club, \
+    MIT, sponsored by CED, Anna University."
 ];
 
 const committee_titles = [
@@ -42,6 +42,10 @@ const track_titles = [
     "UAV Technology", "Robotics and its Applications", "Drone and Robotics",
     "ICT Support systems for Drones and Robotics"
 ];
+
+const track_description = "Papers related to all aspects of techniques and applications offering insights \
+for Drones and Robotics are welcome. Accepted and registered papers will be published in conference proceedings. \
+Best Paper from each track will be awarded a cash prize of ₹5000 (per Track). Conference topics include (but are not limited to) the following:";
 
 const track_topics = {
     "UAV Technology": [
@@ -116,19 +120,19 @@ const submissionGuidelines = {
 const dates = [
     {
         "event": "Paper Submission Due",
-        "date": "31st Jan 2023"
+        "date": ["31", "st", " Jan 2023"]
     },
     {
         "event": "Notification of Acceptance",
-        "date": "20th Feb 2023"
+        "date": ["20", "th", " Feb 2023"]
     },
     {
         "event": "Final camera-ready paper submission",
-        "date": "2nd Mar 2023"
+        "date": ["2", "nd", " Mar 2023"]
     },
     {
         "event": "Registration",
-        "date": "16th Mar 2023"
+        "date": ["16", "th", " Mar 2023"]
     }
 ]
 
@@ -140,7 +144,7 @@ const register_details = [
         "presentation": "INR 3000/-",
         "participation": "INR 2000/-",
         "link": " ",
-        "link_status": "CLOSED"
+        "link_status": "opening soon"
     },
 
     {
@@ -149,7 +153,7 @@ const register_details = [
         "presentation": "INR 5000/-",
         "participation": "INR 3000/-",
         "link": " ",
-        "link_status": "CLOSED"
+        "link_status": "opening soon"
     },
 
     {
@@ -158,8 +162,13 @@ const register_details = [
         "presentation": "INR 7000/-",
         "participation": "INR 4000/-",
         "link": " ",
-        "link_status": "CLOSED"
+        "link_status": "opening soon"
     }
 ]
 
-export { about, committee_titles, committee_members, track_titles, track_topics, submissionGuidelines, dates, register_details };
+const register_description = "Registered participants will be provided with kit, food and refreshments.";
+
+export {
+    about, committee_titles, committee_members, track_titles, track_description,
+    track_topics, submissionGuidelines, dates, register_details, register_description
+};

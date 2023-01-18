@@ -1,7 +1,7 @@
 .section {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 12.5rem 3.5rem 3.5rem 4.5rem;
+    padding: 13.5rem 3.5rem 3.5rem 4.5rem;
 }
 
 .track {
@@ -21,23 +21,41 @@
 
 .track h2 i {
     font-style: normal;
-    color: var(--primary);
+    color: var(--accent);
+}
+
+.description {
+    padding-right: 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 1.25px;
+    line-height: 1.4;
+    color: #6b6b6b;
 }
 
 .track>div {
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .track ul {
     margin: 1rem;
     padding: 1rem 2rem;
     flex: 1;
-    color: rgb(119, 119, 119);
+    color: var(--secondary);
     border: 2px solid rgb(168, 168, 168);
     box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.15);
+    list-style: none;
+}
+
+.track ul li::before {
+    content: "\2022";
+    color: var(--primary);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.7em;
 }
 
 .track ul li {
@@ -45,6 +63,7 @@
     padding: 0.4rem 0rem;
     letter-spacing: 0.8px;
     line-height: 1.6;
+    text-shadow: 0 1px 45px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 700px) {
@@ -56,6 +75,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
+    }
+
+    .description {
+        padding-right: 0;
     }
 }
 
@@ -70,5 +93,9 @@
 
     .track ul li {
         font-size: 1rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
     }
 }
