@@ -10,7 +10,7 @@ function Landing() {
       <div className={styles.landing}>
          <div className={styles.bg}>
             <h1 className={styles.heroText}>
-               <span className={styles.s1}>Symposia on</span>
+               <span className={styles.s1}>Symposium on</span>
                <span className={styles.s1}>Emerging Technologies in</span>
                <span className={styles.s2}>DOROTICS</span>
                <span className={styles.s3}>2023</span>

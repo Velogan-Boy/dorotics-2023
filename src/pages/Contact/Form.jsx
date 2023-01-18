@@ -4,9 +4,9 @@ import styles from './Form.module.css';
 
 function Form() {
    return (
-      <div className={styles.container}>
+      <form className={styles.container}>
          <div className={styles.inputGrp}>
-            <input className={styles.input} type="text" placeholder="Name" />
+            <input name="name" className={styles.input} type="text" placeholder="Name" />
             <input className={styles.input} type="text" placeholder="Contact Number" />
          </div>
          <div className={styles.inputGrp}>
@@ -27,7 +27,7 @@ function Form() {
          </div>
 
          <button className={styles.btn}>Send</button>
-      </div>
+      </form>
    );
 }
 
