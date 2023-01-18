@@ -2,6 +2,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
+   overflow: hidden;
 }
 
 .bg {
@@ -69,6 +70,58 @@
    font-size: 1rem;
 }
 
+.venueSection {
+   width: 100%;
+   text-align: center;
+   margin: 2rem 0rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.venueContainer {
+   width: 100%;
+   padding-top: 1rem;
+   display: flex;
+}
+
+.map {
+   padding: 1rem;
+   width: 65%;
+   height: 70vh;
+}
+
+.howtoReach {
+   padding: 2rem;
+   padding-left: 3rem;
+
+   width: 35%;
+   position: relative;
+}
+
+.howtoReach h2 {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+   color: var(--accent);
+}
+
+.howtoReach p {
+   font-size: 1.6rem;
+   line-height: 2.3rem;
+   font-weight: 300;
+   color: var(--primary);
+}
+
+.howtoReach div {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -80%);
+   width: 80%;
+   margin-left: auto;
+}
 
 @media only screen and (max-width: 1024px) {
    .heroText {
@@ -80,12 +133,10 @@
    .subText {
       font-size: 2rem;
    }
- 
 }
 
 @media only screen and (max-width: 768px) {
-   
-   .bg{
+   .bg {
       height: 90vh;
    }
    .heroText {
@@ -110,5 +161,41 @@
    .sb1 {
       font-size: 0.8rem;
    }
+
+   .venueContainer {
+      flex-direction: column-reverse;
+      padding: 0;
+   }
+
+   .map {
+      width: 100%;
+      height: 50vh;
+      padding: 0;
+      padding-top:1rem ;
+   }
+
+   .howtoReach {
+      width: 100%;
+      padding: 1rem;
+   }
+
+   .howtoReach div {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      width: 100%;
+      padding: 0;
+      margin: auto;
+      
+   }
+
    
+   .howtoReach h2 {
+      font-size: 1.7rem;
+   }
+   .howtoReach p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+   }
 }

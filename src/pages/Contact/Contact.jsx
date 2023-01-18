@@ -23,6 +23,7 @@ function Contact() {
                <div className={styles.rightContainer}>
                   <div className={styles.card}>
                      <div className={styles.name}>Dr. S. Chitrakala</div>
+                     <div>Professor, DCSE, CEG, Anna University</div>
                      <div className={styles.phone}>
                         <FiPhoneCall />
                         <span className={styles.phoneNo}>+91 44-22558859</span>
@@ -30,6 +31,7 @@ function Contact() {
                   </div>
                   <div className={styles.card}>
                      <div className={styles.name}>Dr. T.Mala</div>
+                     <div>Associate Professor, DIST, CEG, Anna University</div>
                      <div className={styles.phone}>
                         <FiPhoneCall />
                         <span className={styles.phoneNo}>+91 44-22558854</span>
@@ -45,9 +47,8 @@ function Contact() {
                </div>
             </div>
          </div>
-         
-         <Footer/>
-         
+
+         <Footer />
       </>
    );
 }

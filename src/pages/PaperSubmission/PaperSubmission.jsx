@@ -20,7 +20,7 @@ const PaperSubmission = () => {
                             {submissionGuidelines.desc[2]}
                         </p>
                         <a href={submissionGuidelines.link} target="_blank" rel="noreferrer">
-                            Click here
+                            Submit here
                         </a>
                     </div>
                     <div>

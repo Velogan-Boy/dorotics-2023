@@ -7,7 +7,11 @@ import styles from './Footer.module.css';
 function Footer() {
    return (
       <div className={styles.footer}>
-         <h1 className={styles.heading}>DOROTICS 2023</h1>
+         <div className={styles.logo}>
+            <a href="/">
+               <img src="/logo-white.png" className={styles.logoImg} alt="Dorotics Logo" />
+            </a>
+         </div>
          <h2>Follow Us On</h2>
          <div className={styles.socialIcons}>
             <a className={styles.socialLinks} href="https://www.facebook.com/dorotics2023" target="_blank" rel="noreferrer">
