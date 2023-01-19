@@ -4,11 +4,10 @@ import Heading from '../../components/UI/Heading/Heading';
 import SubHeading from '../../components/UI/SubHeading/SubHeading';
 import Form from './Form';
 import { FiPhoneCall } from 'react-icons/fi';
-import {MdEmail} from 'react-icons/md';   
+import { MdEmail } from 'react-icons/md';
 
 import styles from './Contact.module.css';
 import Footer from '../../components/Footer/Footer';
-import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 
 function Contact() {
    return (
