@@ -12,6 +12,7 @@ import Tracks from './pages/Tracks/Tracks';
 import Register from './pages/Register/Register';
 import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
 import Contact from './pages/Contact/Contact';
+import Publications from './pages/Publications/Publications';
 
 import './App.css';
 import Keynotes from './pages/Keynotes/Keynotes';
@@ -39,6 +40,7 @@ const AllRoutes = () => {
          <Route path="/committee" element={<Committee />} />
          <Route path="/tracks" element={<Tracks />} />
          <Route path="/paper-submission" element={<PaperSubmission />} />
+         <Route path="/publications" element={<Publications />} />
          <Route path="/register" element={<Register />} />
          <Route path="/keynote" element={<Keynotes />} />
          <Route path="/dates" element={<Dates />} />
