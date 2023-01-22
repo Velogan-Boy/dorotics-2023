@@ -172,12 +172,19 @@ const register_details = [
 ]
 
 const publications = "The best papers selected in the Symposium by the Judges / Reviewers will be recommended for possible publication in the respective scopes of ICTACT Journals. These papers would be selected for publication after the peer \
-review process by ICT Academy. ICT Academy currently publishes five International Journals - ICTACT Journal on Communication Technology, ICTACT Journal on Soft Computing, ICTACT Journal on Image & Video Processing, ICTACT Journal on Microelectronics and ICTACT Journal on Management Studies."
+review process by ICT Academy. ICT Academy currently publishes five International Journals: ";
+const journals = [
+    "ICTACT Journal on Communication Technology",
+    "ICTACT Journal on Soft Computing",
+    "ICTACT Journal on Image & Video Processing",
+    "ICTACT Journal on Microelectronics",
+    "ICTACT Journal on Management Studies"
+]
 
 
 const register_description = "Registered participants will be provided with kit, food and refreshments.";
 
 export {
-    about, committee_titles, committee_members, track_titles, track_description, publications,
+    about, committee_titles, committee_members, track_titles, track_description, publications, journals,
     track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat
 };

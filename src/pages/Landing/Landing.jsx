@@ -27,10 +27,10 @@ function Landing() {
                   <div className={styles.scroll_title}>
                      <div>
                         <p>
-                           {". Award ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals "}
+                           {". Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals "}
                         </p>
                         <p>
-                           {". Award ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals "}
+                           {". Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals "}
                         </p>
                      </div>
                   </div>

@@ -3,7 +3,7 @@ import Heading from '../../components/UI/Heading/Heading'
 import SubHeading from '../../components/UI/SubHeading/SubHeading'
 import Footer from '../../components/Footer/Footer';
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
-import { publications } from '../../data'
+import { journals, publications } from '../../data'
 import styles from "./Publications.module.css"
 
 const Publications = () => {
@@ -16,12 +16,16 @@ const Publications = () => {
                 <div className={styles.container}>
                     <div>
                         <p>{publications}</p>
+                        <ul>
+                            {journals.map((journal, index) => <li key={index}>{journal}</li>)}
+                        </ul>
                         <p>For more details visit
                             <a href='https://www.ictactjournals.in' target="_blank" rel="noreferrer"> www.ictactjournals.in</a>
                         </p>
                     </div>
                     <div>
                         <img src='/ict-academy.png' alt='ICTACT logo' />
+                        <p>Knowledge Partner</p>
                     </div>
                 </div>
             </div>
