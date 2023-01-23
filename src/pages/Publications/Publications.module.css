@@ -90,7 +90,8 @@
     }
 
     .section h3,
-    .section p {
+    .section p,
+    .section li {
         font-size: 1.1rem;
     }
 
