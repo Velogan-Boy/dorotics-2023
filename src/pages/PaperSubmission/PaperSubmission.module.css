@@ -2,53 +2,41 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 13.5rem 5rem 3.5rem 5rem;
+    font-size: 1.35rem;
+    letter-spacing: 1.25px;
+    line-height: 1.4;
 }
 
 .container {
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    font-size: 1.5rem;
-    letter-spacing: 1.25px;
-    line-height: 1.4;
+    align-items: center;
 }
 
 .container div:first-child {
     flex: 0.85;
 }
 
-.container div img {
-    margin-bottom: -0.95rem;
+.section ul {
+    padding-left: 1.5rem;
 }
 
-.container p {
+.section li {
     color: rgb(119, 119, 119);
+    margin: 1rem 0;
 }
 
-.container p i {
-    font-style: normal;
-    color: var(--primary);
-    font-weight: bold;
-}
-
-.container a {
+.section a {
     color: var(--secondary);
-    font-size: 1.4rem;
     font-weight: 600;
 }
 
-@media screen and (max-width: 1100px) {
-    .container div:first-child {
-        flex: 0.95;
-    }
+.format {
+    max-width: 1000px;
 }
 
-@media screen and (max-width: 900px) {
-
-    .section {
-        padding: 13.5rem 3.5rem 3.5rem 4.5rem;
-    }
-
+@media screen and (max-width: 1100px) {
     .container {
         flex-direction: column;
         justify-content: center;
@@ -61,13 +49,23 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+
+    .section {
+        padding: 13.5rem 3.5rem 3.5rem 4.5rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .section {
-        padding: 12.5rem 1.5rem 3.5rem 3.5rem;
-    }
-
-    .container {
-        padding-right: 0rem;
+        padding: 12.5rem 1.5rem 3.5rem 2.2rem;
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section h2 {
+        font-size: 1.1rem;
+        word-wrap: break-word;
     }
 }

@@ -7,12 +7,13 @@ import styles from "./KeynoteSpeaker.module.css"
 const KeynoteSpeaker = () => {
 
     return (
-         <>
-          <img src={pic} className={styles.image} alt="Moodu"/> 
-          <div>TITLE : NAME</div>
-          <div> INSTITUTE </div>
-        </>
+         <div className={styles.card}>
+          <img src={pic} className={styles.image} alt="Speaker Image"/> 
+          <div className={styles.title}>NAME</div>
+          <div className={styles.institute}> INSTITUTE </div>
+          </div>
     )
 }
+
 
 export default KeynoteSpeaker

@@ -1,0 +1,105 @@
+.section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 13.5rem 3rem 3.5rem 5rem;
+    font-size: 1.35rem;
+    letter-spacing: 1.25px;
+    line-height: 1.6;
+}
+
+.section h3 {
+    color: var(--primary);
+    font-size: 1.35rem;
+    margin: 10px;
+}
+
+.container {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container div:nth-child(2) {
+    margin: 0 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div img {
+    width: 300px;
+}
+
+.container div:nth-child(2) p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.section p,
+.section li {
+    color: rgb(119, 119, 119);
+}
+
+.section a {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container div:first-child {
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+
+    .container div:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .section {
+        padding: 13.5rem 3.5rem 3.5rem 4.5rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .section {
+        padding: 12.5rem 1.5rem 3.5rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .section h2 {
+        font-size: 1rem;
+    }
+
+    .section h3,
+    .section p,
+    .section li {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 0 0 0 20px;
+    }
+
+    .container div img {
+        width: 250px;
+    }
+}

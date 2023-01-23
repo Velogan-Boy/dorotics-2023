@@ -13,7 +13,15 @@ function Keynotes() {
      <Heading text={"Keynotes"}/>
      <div className={styles.wrapper}>
             <SubHeading text="Keynote speakers" />
-            <KeynoteSpeaker />
+            <div className={styles.container}>
+              <KeynoteSpeaker />
+              <KeynoteSpeaker />
+              <KeynoteSpeaker />
+              <KeynoteSpeaker />
+              <KeynoteSpeaker />
+              <KeynoteSpeaker />
+            </div>
+            
       </div>
 
      </>

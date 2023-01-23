@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Heading from '../../components/UI/Heading/Heading'
 import SubHeading from '../../components/UI/SubHeading/SubHeading'
 import Footer from '../../components/Footer/Footer';

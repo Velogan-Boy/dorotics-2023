@@ -107,15 +107,20 @@ const track_topics = {
     ]
 };
 
-const submissionGuidelines = {
-    desc: [
-        "Prospective authors are encouraged to submit their papers through ",
-        "Easy chair",
-        ". All the submissions sent must be original and should not have been published or under consideration for publication in any other journal."
-    ],
-    link: "https://easychair.org/conferences/?conf=dorotics2023"
-};
+const submissionGuidelines = [
+    "Authors should submit original paper and should not have been published anywhere else or be under review for any journal or other conferences.",
+    "The written manuscript should be thoroughly checked for grammatical or typographical errors before submission.",
+    "The manuscripts should be at least four (4) pages long but not exceed eight (8) pages, should not use smaller than 10pt font size.",
+    "Tables, figures and images should have appropriate captions and be of good quality.",
+    "The full article must be submitted as a MS Word file in DOC or DOCX format or in PDF format.",
+    "Upload the full paper through the EasyChair platform.",
+    "Any paper which does not follow the guidelines may not be considered for publication in the conference proceedings."
+];
 
+const submissionFormat = [
+    "It is required that the manuscript follows the standard IEEE.",
+    "Please click here to download the IEEE paper templates , IEEE - Manuscript Templates for Conference Proceedings"
+]
 
 const dates = [
     {
@@ -166,9 +171,20 @@ const register_details = [
     }
 ]
 
+const publications = "The best papers selected in the Symposium by the Judges / Reviewers will be recommended for possible publication in the respective scopes of ICTACT Journals. These papers would be selected for publication after the peer \
+review process by ICT Academy. ICT Academy currently publishes five International Journals: ";
+const journals = [
+    "ICTACT Journal on Communication Technology",
+    "ICTACT Journal on Soft Computing",
+    "ICTACT Journal on Image & Video Processing",
+    "ICTACT Journal on Microelectronics",
+    "ICTACT Journal on Management Studies"
+]
+
+
 const register_description = "Registered participants will be provided with kit, food and refreshments.";
 
 export {
-    about, committee_titles, committee_members, track_titles, track_description,
-    track_topics, submissionGuidelines, dates, register_details, register_description
+    about, committee_titles, committee_members, track_titles, track_description, publications, journals,
+    track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat
 };
