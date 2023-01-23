@@ -12,14 +12,10 @@ function Keynotes() {
      <>
      <Heading text={"Keynotes"}/>
      <div className={styles.wrapper}>
-            <SubHeading text="Keynote speakers" />
+            {/* <SubHeading text="Keynote speakers" /> */}
             <div className={styles.container}>
-              <KeynoteSpeaker />
-              <KeynoteSpeaker />
-              <KeynoteSpeaker />
-              <KeynoteSpeaker />
-              <KeynoteSpeaker />
-              <KeynoteSpeaker />
+              {/* <KeynoteSpeaker /> */}
+              <div className={styles.update}>Will be updated shortly!</div>
             </div>
             
       </div>

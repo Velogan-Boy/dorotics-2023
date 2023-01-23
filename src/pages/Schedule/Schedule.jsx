@@ -10,7 +10,7 @@ const Schedule = () => {
         <>
           <Heading text="Schedule" />
           <div className={styles.wrapper}>
-            <SubHeading text="Schedule" />
+            {/* <SubHeading text="Schedule" />  */}
             <div className={styles.update}> Will be updated shortly !</div>
          </div>
         </>
