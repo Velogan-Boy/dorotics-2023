@@ -5,23 +5,23 @@ import SubHeading from '../../components/UI/SubHeading/SubHeading';
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import Footer from '../../components/Footer/Footer';
 
+import styles from './TechnicalCommittee.module.css';
 
-import styles from './Schedule.module.css';
-
-const Schedule = () => {
+function TechnicalCommittee() {
    return (
       <>
-         <Heading text="Schedule" />
+         <Heading text="Technical Committee" />
          <div className={styles.wrapper}>
-            {/* <SubHeading text="Schedule" />  */}
+            {/* <SubHeading text="Technical Committee" /> */}
             <div className={styles.container}>
-               <div className={styles.update}> Will be updated shortly!</div>
+               {/* <KeynoteSpeaker /> */}
+               <div className={styles.update}>Will be updated shortly!</div>
             </div>
          </div>
-         <FloatNextButton link="/contact-us" />
+         <FloatNextButton link="/keynote" />
          <Footer />
       </>
    );
-};
+}
 
-export default Schedule;
+export default TechnicalCommittee;

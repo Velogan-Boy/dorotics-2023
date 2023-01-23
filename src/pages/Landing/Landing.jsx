@@ -11,8 +11,7 @@ function Landing() {
       <div className={styles.landing}>
          <div className={styles.bg}>
             <h1 className={styles.heroText}>
-               <span className={styles.s1}>Symposium on</span>
-               <span className={styles.s1}>Drones and Robotics</span>
+               <span className={styles.s1}>National Symposium on</span>
                <span className={styles.s2}>DOROTICS</span>
                <span className={styles.s3}>2023</span>
             </h1>
@@ -27,10 +26,14 @@ function Landing() {
                   <div className={styles.scroll_title}>
                      <div>
                         <p>
-                           {". Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals "}
+                           {
+                              '. Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
+                           }
                         </p>
                         <p>
-                           {". Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals "}
+                           {
+                              '. Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
+                           }
                         </p>
                      </div>
                   </div>
@@ -50,7 +53,6 @@ function Landing() {
                         <br />
                         12, Sardar Patel Rd, Anna University, Guindy, Chennai, Tamil Nadu 600025
                      </p>
-
                   </div>
                </div>
                <div className={styles.map}>

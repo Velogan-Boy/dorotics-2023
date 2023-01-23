@@ -13,6 +13,7 @@ import Register from './pages/Register/Register';
 import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
 import Contact from './pages/Contact/Contact';
 import Publications from './pages/Publications/Publications';
+import TechnicalCommittee from './pages/TechnicalCommittee/TechnicalCommittee';
 import Schedule from './pages/Schedule/Schedule'
 
 import './App.css';
@@ -39,6 +40,7 @@ const AllRoutes = () => {
          <Route path="/" element={<Landing />} />
          <Route path="/about" element={<About />} />
          <Route path="/committee" element={<Committee />} />
+         <Route path="/tech-committee" element={<TechnicalCommittee />} />
          <Route path="/tracks" element={<Tracks />} />
          <Route path="/paper-submission" element={<PaperSubmission />} />
          <Route path="/publications" element={<Publications />} />

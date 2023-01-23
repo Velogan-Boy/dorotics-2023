@@ -171,8 +171,8 @@ const register_details = [
     }
 ]
 
-const publications = "The best papers selected in the Symposium by the Judges / Reviewers will be recommended for possible publication in the respective scopes of ICTACT Journals. These papers would be selected for publication after the peer \
-review process by ICT Academy. ICT Academy currently publishes five International Journals: ";
+const publications = ["Accepted and registered papers will be published in conference proceedings.","The best papers selected in the Symposium by the Judges / Reviewers will be recommended for possible publication in the respective scopes of ICTACT Journals. These papers would be selected for publication after the peer \
+review process by ICT Academy. ICT Academy currently publishes five International Journals: "];
 const journals = [
     "ICTACT Journal on Communication Technology",
     "ICTACT Journal on Soft Computing",
