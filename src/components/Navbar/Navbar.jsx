@@ -32,8 +32,8 @@ function Navbar() {
          path: '/keynote',
       },
       {
-         name: 'Dates',
-         path: '/dates',
+         name: 'Schedule',
+         path: '/schedule',
       },
       {
          name: 'Contact Us',

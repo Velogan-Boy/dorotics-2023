@@ -12,6 +12,7 @@ import Tracks from './pages/Tracks/Tracks';
 import Register from './pages/Register/Register';
 import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
 import Contact from './pages/Contact/Contact';
+import Schedule from './pages/Schedule/Schedule'
 
 import './App.css';
 import Keynotes from './pages/Keynotes/Keynotes';
@@ -43,6 +44,7 @@ const AllRoutes = () => {
          <Route path="/keynote" element={<Keynotes />} />
          <Route path="/dates" element={<Dates />} />
          <Route path="/contact-us" element={<Contact />} />
+         <Route path="/schedule" element={<Schedule />} />
       </Routes>
    );
 };
