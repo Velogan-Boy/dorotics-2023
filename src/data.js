@@ -45,7 +45,7 @@ const track_titles = [
 
 const track_description = "Papers related to all aspects of techniques and applications offering insights \
 for Drones and Robotics are welcome. Accepted and registered papers will be published in conference proceedings. \
-Best Paper from each track will be awarded a cash prize of ₹5000 (per Track). Conference topics include (but are not limited to) the following:";
+Best Paper from each track will be awarded a cash prize of ₹5000 (per Track). Symposium topics include (but are not limited to) the following:";
 
 const track_topics = {
     "UAV Technology": [
@@ -171,20 +171,29 @@ const register_details = [
     }
 ]
 
-const publications = ["Accepted and registered papers will be published in conference proceedings.","The best papers selected in the Symposium by the Judges / Reviewers will be recommended for possible publication in the respective scopes of ICTACT Journals. These papers would be selected for publication after the peer \
-review process by ICT Academy. ICT Academy currently publishes five International Journals: "];
+const publications = ["Accepted and registered papers will be published in conference proceedings. Selected and extended best papers will be considered for possible publication in the \
+following journals based on peer review process by the journals: "];
 const journals = [
-    "ICTACT Journal on Communication Technology",
-    "ICTACT Journal on Soft Computing",
-    "ICTACT Journal on Image & Video Processing",
-    "ICTACT Journal on Microelectronics",
-    "ICTACT Journal on Management Studies"
+    "The best papers selected in the Symposium by the Judges / Reviewers will be \
+    recommended for possible publication in the respective scopes of ICTACT Journals. \
+    These papers would be selected for publication after the peer review process by ICT \
+    Academy. ICT Academy currently publishes five International Journals:",
+    "ACTA journals (Awaiting Formal Confirmation)"
 ]
+const subJournals = {
+    one: ["ICTACT Journal on Communication Technology",
+        "ICTACT Journal on Soft Computing",
+        "ICTACT Journal on Image & Video Processing",
+        "ICTACT Journal on Microelectronics",
+        "ICTACT Journal on Management Studies"],
+    two: []
+}
 
 
-const register_description = "Registered participants will be provided with kit, food and refreshments.";
+const register_description = "At least one author for each accepted paper must register. If Co-Authors wish to participate in the \
+conference, need to register under the “co-author participant” category. Registered participants will be provided with kit, food and refreshments.";
 
 export {
-    about, committee_titles, committee_members, track_titles, track_description, publications, journals,
+    about, committee_titles, committee_members, track_titles, track_description, publications, journals, subJournals,
     track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat
 };

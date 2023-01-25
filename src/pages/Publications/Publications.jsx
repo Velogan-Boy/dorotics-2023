@@ -3,7 +3,7 @@ import Heading from '../../components/UI/Heading/Heading';
 import SubHeading from '../../components/UI/SubHeading/SubHeading';
 import Footer from '../../components/Footer/Footer';
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
-import { journals, publications } from '../../data';
+import { journals, publications, subJournals } from '../../data';
 import styles from './Publications.module.css';
 
 const Publications = () => {
@@ -18,20 +18,26 @@ const Publications = () => {
                   {publications.map((publication, index) => (
                      <p key={index}>{publication}</p>
                   ))}
-                  <ul>
-                     {journals.map((journal, index) => (
-                        <li key={index}>{journal}</li>
-                     ))}
-                  </ul>
-                  <p>
-                     For more details visit
-                     <a href="https://www.ictactjournals.in" target="_blank" rel="noreferrer">
-                        {' '}
-                        www.ictactjournals.in
-                     </a>
-                  </p>
+                  <div className={styles.journal}>
+                     <p>◼{" " + journals[0]}</p>
+                     <ul>
+                        {subJournals.one.map((journal, index) => (
+                           <li key={index}>{journal}</li>
+                        ))}
+                     </ul>
+                     <p>
+                        For more details visit
+                        <a href="https://www.ictactjournals.in" target="_blank" rel="noreferrer">
+                           {' '}
+                           www.ictactjournals.in
+                        </a>
+                     </p>
+                  </div>
+                  <div className={styles.journal}>
+                     <p>◼{" " + journals[1]}</p>
+                  </div>
                </div>
-               <div>
+               <div className={styles.partner}>
                   <img src="/ict-academy.png" alt="ICTACT logo" />
                   <p>Knowledge Partner</p>
                </div>

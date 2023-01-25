@@ -1,32 +1,46 @@
-.wrapper {
+.wrapper1 {
     margin-top: 20px;
     padding: 13.5rem 7rem 3.5rem 5.25rem;
     max-width: 1600px;
     margin: 0 auto;
 }
 
-.container{
-      text-align: center;
-      height: 30vh;
+.wrapper2 {
+    padding: 0 7rem 3.5rem 5.25rem;
 }
-.update{
 
-    margin-top: 30px;
+.container {
+    text-align: center;
+    height: 30vh;
+}
+
+.update {
+    margin-top: 2rem;
     font-size: 2em;
     color: #6b6b6b;
     text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
-    .wrapper {
+    .wrapper1 {
         padding: 13.5rem 2.5rem 3.5rem 3.25rem;
+    }
+
+    .wrapper2 {
+        padding: 0 2.5rem 3.5rem 3.25rem;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .wrapper {
+    .wrapper1 {
         padding: 13.5rem 1.5rem 3.5rem 3.25rem;
     }
 
-    
+    .wrapper2 {
+        padding: 0 1.5rem 3.5rem 3.25rem;
+    }
+
+    .update {
+        font-size: 1.5em;
+    }
 }

@@ -8,7 +8,7 @@ function Navbar() {
    const [showMenu, setShowMenu] = useState(false);
 
    const navLinks = [
-      
+
       {
          name: 'About',
          path: '/about',
@@ -135,7 +135,7 @@ function Navbar() {
             </div>
 
             <div className={`${styles.floater2}`}>
-               <Link className={styles.floaterLink} to="/dates">
+               <Link className={styles.floaterLink} to="/schedule">
                   Important Dates
                </Link>
             </div>

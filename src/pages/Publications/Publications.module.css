@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.container div:nth-child(2) {
+.partner {
     margin: 0 0 3rem 3rem;
     display: flex;
     flex-direction: column;
@@ -29,11 +29,11 @@
     justify-content: center;
 }
 
-.container div img {
+.partner img {
     width: 300px;
 }
 
-.container div:nth-child(2) p {
+.partner p {
     text-align: center;
     font-weight: 600;
 }
@@ -48,6 +48,11 @@
     font-weight: 600;
 }
 
+.journal {
+    margin: 1.5rem 0rem;
+    padding-left: 1.3rem;
+}
+
 @media screen and (max-width: 1200px) {
     .container {
         flex-direction: column;
@@ -60,7 +65,7 @@
         margin-bottom: 2rem;
     }
 
-    .container div:nth-child(2) {
+    .partner {
         margin: 0;
     }
 }
@@ -99,7 +104,15 @@
         padding: 0 0 0 20px;
     }
 
-    .container div img {
+    .journal {
+        padding-left: 0.5rem;
+    }
+
+    .partner img {
         width: 250px;
+    }
+
+    ul {
+        padding-left: 1.5rem;
     }
 }

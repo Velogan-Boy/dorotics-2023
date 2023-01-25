@@ -18,7 +18,6 @@ import Schedule from './pages/Schedule/Schedule'
 
 import './App.css';
 import Keynotes from './pages/Keynotes/Keynotes';
-import Dates from './pages/Dates/Dates';
 
 function App() {
    return (
@@ -46,7 +45,6 @@ const AllRoutes = () => {
          <Route path="/publications" element={<Publications />} />
          <Route path="/register" element={<Register />} />
          <Route path="/keynote" element={<Keynotes />} />
-         <Route path="/dates" element={<Dates />} />
          <Route path="/contact-us" element={<Contact />} />
          <Route path="/schedule" element={<Schedule />} />
       </Routes>

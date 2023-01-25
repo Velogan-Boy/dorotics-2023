@@ -25,7 +25,7 @@ function Contact() {
                      <div>Professor, DCSE, CEG, Anna University</div>
                      <div className={styles.phone}>
                         <FiPhoneCall />
-                        <span className={styles.phoneNo}>+91 44-22558859</span>
+                        <span className={styles.phoneNo}>+91 44-22358859</span>
                      </div>
                   </div>
                   <div className={styles.card}>
@@ -33,7 +33,7 @@ function Contact() {
                      <div>Associate Professor, DIST, CEG, Anna University</div>
                      <div className={styles.phone}>
                         <FiPhoneCall />
-                        <span className={styles.phoneNo}>+91 44-22558854</span>
+                        <span className={styles.phoneNo}>+91 44-22358854</span>
                      </div>
                   </div>
 
