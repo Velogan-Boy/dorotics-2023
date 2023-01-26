@@ -1,3 +1,4 @@
+
 .image{
 
     width: 200px;
@@ -19,6 +20,15 @@
     font-weight: 600;
     font-size: 30px;
     text-align: center;
+}
+
+.description{
+
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    /* width: 250px; */
 }
 
 .institute{

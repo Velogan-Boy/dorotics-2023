@@ -216,7 +216,34 @@ const subJournals = {
 const register_description = "At least one author for each accepted paper must register. If Co-Authors wish to participate in the \
 conference, need to register under the “co-author participant” category. Registered participants will be provided with kit, food and refreshments.";
 
+
+const keynote_speakers = [
+    {
+        photo: "/speakers/dinesh_manoharan.jpg",
+        speaker: "Venkatraman Narayanan",
+        description: "Principal Tech Lead Manager - Motion Planning",
+        organisation: "Aurora, San Francisco Bay Area"
+    },
+    {
+        photo: "/speakers/sreekumar.png",
+        speaker: "Dinesh Manoharan",
+        description: "CTO, Aerospace & Defence Systems,",
+        organisation:  "UCAL Technologies"
+    },
+    {
+        photo: "/speakers/venkatraman_narayanan.jpg",
+        speaker: "Prof. Sreekumar M",
+        description: "Professor",
+        organisation: "IIIT Kanchipuram" 
+    },
+    {
+        photo: "/speakers/vinod_PSG.jpg",
+        speaker: "Dr B. Vinod",
+        description: "Professor",
+        organisation: "Department of Robotics and Automation, PSG"
+    }
+]
 export {
     about, committee_titles, committee_members, track_titles, track_description, publications, journals, subJournals,
-    track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat
+    track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat, keynote_speakers
 };

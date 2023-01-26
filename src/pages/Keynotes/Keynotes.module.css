@@ -7,13 +7,14 @@
 
 .container{
 
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-    /* gap: 1rem; */
+    display: flex; 
+    justify-content: space-around;
+    align-items:center; 
+    flex-wrap: wrap; 
+    gap: 1rem;
     height: 30vh;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .update{

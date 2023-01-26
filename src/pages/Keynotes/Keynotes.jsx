@@ -6,24 +6,28 @@ import KeynoteSpeaker from "../../components/KeynoteSpeaker/KeynoteSpeaker"
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import Footer from '../../components/Footer/Footer';
 
+import {keynote_speakers} from "../../data.js"
+
 import styles from './Keynotes.module.css'
 
 function Keynotes() {
   return (
-     <>
+     <div>
      <Heading text={"Keynotes"}/>
      <div className={styles.wrapper}>
-            {/* <SubHeading text="Keynote speakers" /> */}
             <div className={styles.container}>
-              {/* <KeynoteSpeaker /> */}
-              <div className={styles.update}>Will be updated shortly!</div>
+              {
+                    keynote_speakers.map((detail) => {
+                        return (
+                            <KeynoteSpeaker detail = {detail}/>
+                        )
+                    })
+              } 
             </div>
-            
       </div>
       <FloatNextButton link="/schedule" />
-      <Footer />
-
-     </>
+      {/* <Footer />  */}
+     </div>
   );
 }
 

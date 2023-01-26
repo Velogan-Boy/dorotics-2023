@@ -11,8 +11,8 @@ const Publications = () => {
       <div>
          <Heading text="Publications" />
          <div className={styles.section}>
-            <SubHeading text="Publication in ICTACT Journals" />
-            <h3>( International Publications of ICT Academy )</h3>
+            {/* <SubHeading text="Publication in ICTACT Journals" />
+            <h3>( International Publications of ICT Academy )</h3> */}
             <div className={styles.container}>
                <div>
                   {publications.map((publication, index) => (
