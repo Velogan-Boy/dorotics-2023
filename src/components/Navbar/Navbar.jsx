@@ -18,10 +18,6 @@ function Navbar() {
          path: '/committee',
       },
       {
-         name: 'Technical Committee',
-         path: '/tech-committee',
-      },
-      {
          name: 'Tracks',
          path: '/tracks',
       },
@@ -78,7 +74,7 @@ function Navbar() {
                </a>
                <ul className={styles.navItems}>
                   {navLinks.map((nav, idx) => {
-                     if (idx === 4) {
+                     if (idx === 3) {
                         return <li key={"menu"} className={styles.navItem + " " + styles.menu}>
                            <a href='#' className={styles.navLink}>Submission & Publications</a>
                            <div className={styles.dropdown}>
@@ -103,7 +99,7 @@ function Navbar() {
             <div className={`${styles.nav_mobile}`} ref={mobileNavRef}>
                <ul className={styles.navItems_mobile}>
                   {navLinks.map((nav, idx) => {
-                     if (idx === 4) {
+                     if (idx === 3) {
                         return <>
                            <li key={"mobile" + idx + ".1"} className={styles.navItem_mobile}>
                               <Link className={styles.navLink} to={nav.link1.path}>

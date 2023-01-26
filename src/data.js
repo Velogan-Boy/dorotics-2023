@@ -13,7 +13,7 @@ const about = [
 ];
 
 const committee_titles = [
-    "Chief Patron", "Patron", "Co-patron", "Organizing chairs", "Organizing committee"
+    "Chief Patron", "Patron", "Co-patron", "Organizing chairs", "Organizing committee", "Technical committee"
 ]
 
 const committee_members = {
@@ -36,6 +36,29 @@ const committee_members = {
         "Dr. D. Narashiman, Teaching Fellow, DIST, CEG, Anna University"
     ],
 
+    "Technical committee": [
+        "Venkatraman Narayanan, Principal Tech Lead Manager - Motion Planning at Aurora, San Francisco Bay Area",
+        "Asokan Thondiyath, Professor, Indian Institute of Technology Madras",
+        "Dr.Pradip K.Das, Professor, CSE Department, IIT Guwahati, Assam",
+        "Dr.R.Balasubramanian, Professor, CSE Department, IIT Roorkee",
+        "Dr.Leena Vachhani, Professor, IIT Bombay, Powai, Mumbai",
+        "Dr.P.Suresh kumar, Scientist G, Aeronautical Development Agency, Ministry of Defense, Bangalore",
+        "Arpita Sinha, Professor, Systems and Control Engineering, IIT Bombay",
+        "Dr. Sriparna Saha, Associate Professor, CSE Department, Indian Institute of Technology Patna",
+        "Dr. S D Madhu Kumar, Professor, CSE Department, National Institute of Technology Calicut",
+        "Prof. Sreekumar M, Professor, IIIT kanchipuram",
+        "Dr. Veena Thenkanidiyoor, Associate Professor, National Institute of Technology Goa",
+        "Dinesh Manoharan, CTO Aerospace & Defence Systems, UCAL Technologies, Chennai",
+        "Dr. K. Srinivasan, Associate Professor, IC, NIT- trichy",
+        "Dr. V. Sankaranarayanan, Professor, EEE, NIT- trichy",
+        "Dr. S.Moorthi, Associate Professor, EEE, NIT- trichy",
+        "Dr. Devpriya soni, Associate Professor, Department of Computer Science & Engineering and Information Technology",
+        "Dr. Suganya Devi, Assistant Professor Grade-I, CSE Department, National Institute of Technology Silchar",
+        "Subash S, System Engineer, Honeywell Technology Solutions, Bangalore",
+        "Dr. P. Hariharan, Professor (DoME), Director (Centre for Constituent Colleges (CCC)),Anna University, Chennai",
+        "Dr. K. Udayakumar, Professor,Department of EEE,Anna University , Chennai",
+        "Dr B. Vinod, Professor, Department of Robotics and Automation, PSG"
+    ]
 };
 
 const track_titles = [
