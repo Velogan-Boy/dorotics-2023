@@ -165,32 +165,25 @@ const dates = [
 ]
 
 const register_details = [
-
     {
-
         "category": "Students",
         "presentation": "INR 3000/-",
+        "coAuthor": "INR 2000/-",
         "participation": "INR 2000/-",
-        "link": " ",
-        "link_status": "opening soon"
     },
-
     {
 
         "category": "Academicians",
         "presentation": "INR 5000/-",
+        "coAuthor": "INR 3000/-",
         "participation": "INR 3000/-",
-        "link": " ",
-        "link_status": "opening soon"
     },
 
     {
-
         "category": "Industry",
         "presentation": "INR 7000/-",
+        "coAuthor": "INR 4000/-",
         "participation": "INR 4000/-",
-        "link": " ",
-        "link_status": "opening soon"
     }
 ]
 
@@ -214,9 +207,11 @@ const subJournals = {
 
 
 const register_description = "At least one author for each accepted paper must register. If Co-Authors wish to participate in the \
-conference, need to register under the “co-author participant” category. Registered participants will be provided with kit, food and refreshments.";
+symposium, need to register under the “co-author participant” category. Registered participants will be provided with kit, food and refreshments.";
+
+const register_link = "The registration link will be updated soon in the website."
 
 export {
     about, committee_titles, committee_members, track_titles, track_description, publications, journals, subJournals,
-    track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat
+    track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat, register_link
 };

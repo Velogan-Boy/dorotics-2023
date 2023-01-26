@@ -11,22 +11,21 @@ const TableItems = (prop) => {
                 <td className={styles.category}>
                     {prop.row.category}
                 </td>
-                <td className={styles.presentation}>
-                    {prop.row.presentation}
-                </td>
-                <td className={styles.participation}>
-                    {prop.row.participation}
-                    <a href={prop.row.link} className={styles.button_mobile_wrapper}>
-                        <HiArrowRight className={styles.button_mobile} />
-                    </a>
-                </td>
-                <td>
-                    <a href={prop.row.link}>
-                        <button className={styles.button}>
-                            {prop.row.link_status}
-                        </button>
-                    </a>
-                </td>
+                {
+                    prop.type !== "mobile2" && <td>
+                        {prop.row.presentation}
+                    </td>
+                }
+                {
+                    prop.type !== "mobile2" && <td>
+                        {prop.row.coAuthor}
+                    </td>
+                }
+                {
+                    prop.type !== "mobile1" && <td>
+                        {prop.row.participation}
+                    </td>
+                }
             </tr>
             <tr>
                 <td colSpan={4}>
@@ -40,33 +39,82 @@ const TableItems = (prop) => {
 const RegisterTable = () => {
 
     return (
-        <table className={styles.table}>
-            <thead>
-                <tr className={styles.header}>
-                    <th>
-                        CATEGORY
-                    </th>
-                    <th>
-                        PRESENTATION
-                    </th>
-                    <th>
-                        PARTICIPATION
-                    </th>
-                    <th>
-                        LINK
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    register_details.map((detail, index) => {
-                        return (
-                            <TableItems row={detail} key={index} index={index} />
-                        )
-                    })
-                }
-            </tbody>
-        </table>
+        <>
+            <table className={styles.table + " " + styles.desktop}>
+                <thead className={styles.head}>
+                    <tr className={styles.header}>
+                        <th>
+                            CATEGORY
+                        </th>
+                        <th>
+                            PRESENTER
+                        </th>
+                        <th>
+                            CO-AUTHOR
+                        </th>
+                        <th>
+                            PARTICIPANT
+                        </th>
+                    </tr>
+                </thead>
+                <tbody className={styles.body}>
+                    {
+                        register_details.map((detail, index) => {
+                            return (
+                                <TableItems type={"laptop"} row={detail} key={index} index={index} />
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+
+            <table className={styles.table + " " + styles.mobile}>
+                <thead className={styles.head}>
+                    <tr className={styles.header}>
+                        <th className={styles.category}>
+                            CATEGORY
+                        </th>
+                        <th>
+                            PRESENTER
+                        </th>
+                        <th>
+                            CO-AUTHOR
+                        </th>
+                    </tr>
+                </thead>
+                <tbody className={styles.body}>
+                    {
+                        register_details.map((detail, index) => {
+                            return (
+                                <TableItems type={"mobile1"} row={detail} key={index} index={index} />
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+
+            <table className={styles.table + " " + styles.mobile}>
+                <thead className={styles.head}>
+                    <tr className={styles.header}>
+                        <th className={styles.category}>
+                            CATEGORY
+                        </th>
+                        <th>
+                            PARTICIPANT
+                        </th>
+                    </tr>
+                </thead>
+                <tbody className={styles.body}>
+                    {
+                        register_details.map((detail, index) => {
+                            return (
+                                <TableItems type={"mobile2"} row={detail} key={index} index={index} />
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+        </>
     )
 }
 
