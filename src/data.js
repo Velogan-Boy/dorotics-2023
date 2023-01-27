@@ -187,7 +187,7 @@ const register_details = [
     }
 ]
 
-const publications = ["Accepted and registered papers will be published in conference proceedings. Selected and extended best papers will be considered for possible publication in the \
+const publications = ["Accepted and registered papers will be published in conference proceedings.", "Selected and extended best papers will be considered for possible publication in the \
 following journals based on peer review process by the journals: "];
 const journals = [
     "The best papers selected in the Symposium by the Judges / Reviewers will be \
@@ -211,7 +211,34 @@ symposium, need to register under the “co-author participant” category. Regi
 
 const register_link = "The registration link will be updated soon in the website."
 
+const keynote_speakers = [
+    {
+        photo: "/speakers/dinesh_manoharan.jpg",
+        speaker: "Venkatraman Narayanan",
+        description: "Principal Tech Lead Manager - Motion Planning",
+        organisation: "Aurora, San Francisco Bay Area"
+    },
+    {
+        photo: "/speakers/sreekumar.png",
+        speaker: "Dinesh Manoharan",
+        description: "CTO, Aerospace & Defence Systems,",
+        organisation: "UCAL Technologies"
+    },
+    {
+        photo: "/speakers/venkatraman_narayanan.jpg",
+        speaker: "Prof. Sreekumar M",
+        description: "Professor",
+        organisation: "IIIT Kanchipuram"
+    },
+    {
+        photo: "/speakers/vinod_PSG.jpg",
+        speaker: "Dr B. Vinod",
+        description: "Professor",
+        organisation: "Department of Robotics and Automation, PSG"
+    }
+]
+
 export {
-    about, committee_titles, committee_members, track_titles, track_description, publications, journals, subJournals,
+    about, committee_titles, committee_members, track_titles, track_description, publications, journals, subJournals, keynote_speakers,
     track_topics, submissionGuidelines, dates, register_details, register_description, submissionFormat, register_link
 };

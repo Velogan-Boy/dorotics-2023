@@ -1,29 +1,60 @@
-.image{
-
-    width: 200px;
-    height: 200px;
-    margin-top: 30px;
+.image {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
     border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card{
-
+.card {
+    width: 350px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
 }
 
-.title{
-
+.title {
     margin-top: 30px;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
+    color: var(--primary);
 }
 
-.institute{
+.description {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: var(--accent);
+}
 
+.institute {
+    color: #6b6b6b;
     margin-top: 10px;
     font-weight: 500;
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: min(350px, 100%);
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .description,
+    .institute {
+        font-size: 18px;
+    }
 }

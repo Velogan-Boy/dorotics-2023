@@ -15,7 +15,7 @@ const Publications = () => {
             <div className={styles.container}>
                <div>
                   {publications.map((publication, index) => (
-                     <p key={index}>{publication}</p>
+                     <p key={index}>- {publication}</p>
                   ))}
                   <div className={styles.journal}>
                      <p>◼{" " + journals[0]}</p>
