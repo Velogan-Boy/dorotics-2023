@@ -14,9 +14,11 @@ const Publications = () => {
             <SubHeading text="Publications" />
             <div className={styles.container}>
                <div>
-                  {publications.map((publication, index) => (
-                     <p key={index}>- {publication}</p>
-                  ))}
+                  <ul className={styles.list1}>
+                     {publications.map((publication, index) => (
+                        <li key={index}> {publication}</li>
+                     ))}
+                  </ul>
                   <div className={styles.journal}>
                      <p>◼{" " + journals[0]}</p>
                      <ul>

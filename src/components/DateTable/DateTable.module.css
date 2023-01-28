@@ -1,9 +1,7 @@
 .table {
-    position: relative;
-    margin-top: 40px;
-    align-items: center;
+    margin: 40px auto 0;
     border: 2px solid grey;
-    width: 100%;
+    width: min(1000px, 100%);
     table-layout: fixed;
     border-collapse: collapse;
 }
@@ -12,9 +10,9 @@
     background: var(--primary);
     border: 3px solid var(--primary);
     color: whitesmoke;
-    font-size: 1.6rem;
-    height: 80px;
-    letter-spacing: 1.6px;
+    font-size: 1.25rem;
+    height: 70px;
+    letter-spacing: 1.4px;
 }
 
 .header_events {
@@ -24,12 +22,12 @@
 
 .header_dates {
     text-align: right;
-    padding-right: 10rem;
+    padding-right: 8rem;
 }
 
 .content {
-    height: 80px;
-    font-size: 1.5rem;
+    height: 60px;
+    font-size: 1.1rem;
 }
 
 .events {
@@ -45,7 +43,7 @@
 }
 
 .date sup {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 0.15rem;
 }
 
@@ -61,8 +59,8 @@
 
     .header,
     .content {
-        font-size: 1.4rem;
-        height: 70px;
+        font-size: 1.2rem;
+        height: 60px;
     }
 
     .header_dates {

@@ -1,22 +1,24 @@
 .wrapper1 {
     margin-top: 20px;
     padding: 13.5rem 7rem 3.5rem 5.25rem;
-    max-width: 1600px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
 .wrapper2 {
     padding: 0 7rem 3.5rem 5.25rem;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .container {
     text-align: center;
-    height: 30vh;
+    height: 20vh;
 }
 
 .update {
-    margin-top: 2rem;
-    font-size: 2em;
+    margin-top: 3rem;
+    font-size: 1.75rem;
     color: #6b6b6b;
     text-align: center;
 }

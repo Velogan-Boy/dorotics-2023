@@ -54,6 +54,7 @@
    color: #e8e8e8;
    box-shadow: 5px 5px var(--accent);
 }
+
 ::placeholder {
    color: var(--primary);
 }
@@ -121,7 +122,7 @@
    transition: background 0s;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
    .container {
       width: 90%;
       margin-bottom: 3rem;

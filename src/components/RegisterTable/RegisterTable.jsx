@@ -1,5 +1,5 @@
 import React from "react"
-import { HiArrowRight } from 'react-icons/hi'
+// import { HiArrowRight } from 'react-icons/hi'
 import { register_details } from "../../data";
 import styles from './RegisterTable.module.css';
 

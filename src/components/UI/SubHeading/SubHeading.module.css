@@ -1,6 +1,6 @@
 .text {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: var(--primary);
     letter-spacing: 1.3px;
@@ -16,8 +16,8 @@
 .container:after {
     position: absolute;
     content: ' ';
-    width: 25px;
-    height: 18px;
+    width: 22px;
+    height: 16px;
     border-color: var(--accent);
     border-style: solid;
 }

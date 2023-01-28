@@ -2,13 +2,13 @@
     position: fixed;
     width: 100%;
     margin-top: 4.5rem;
-    padding: 1.8rem 0rem 1.8rem 5.25rem;
+    padding: 1.8rem 0rem 1.8rem 7rem;
     background: var(--goldStripGradient);
     z-index: 2;
 }
 
 .zoomWrapper {
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 

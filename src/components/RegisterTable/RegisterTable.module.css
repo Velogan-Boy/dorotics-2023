@@ -1,9 +1,7 @@
 .table {
-    position: relative;
-    margin-top: 40px;
-    align-items: center;
+    margin: 40px auto 0;
     border: 2px solid grey;
-    width: 100%;
+    width: min(100%, 1000px);
     table-layout: fixed;
     border-collapse: collapse;
     letter-spacing: 1px;
@@ -14,8 +12,8 @@
     background: var(--primary);
     border: 3px solid var(--primary);
     color: whitesmoke;
-    font-size: 1.5rem;
-    height: 90px;
+    font-size: 1.25rem;
+    height: 75px;
 }
 
 .header th:first-child {
@@ -23,8 +21,8 @@
 }
 
 .content {
-    height: 80px;
-    font-size: 1.5rem;
+    height: 60px;
+    font-size: 1.2rem;
     align-items: center;
     text-align: center;
     color: var(--primary);
@@ -54,12 +52,12 @@
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
 
     .header,
     .content {
         font-size: 1rem;
-        min-height: 60px;
+        min-height: 50px;
     }
 
     .desktop {
