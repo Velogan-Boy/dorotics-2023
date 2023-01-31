@@ -84,6 +84,7 @@ function Navbar() {
                                     onClick={(e) => {
                                        toggleNav(e);
                                        navToggleRef.current.classList.toggle(styles.active);
+                                       window.scrollTo(0, 0);
                                     }}
                                     className={styles.navLink}
                                     to={nav.link1.path}
@@ -95,6 +96,7 @@ function Navbar() {
                                     onClick={(e) => {
                                        toggleNav(e);
                                        navToggleRef.current.classList.toggle(styles.active);
+                                       window.scrollTo(0, 0);
                                     }}
                                     className={styles.navLink}
                                     to={nav.link2.path}
@@ -111,6 +113,7 @@ function Navbar() {
                               onClick={(e) => {
                                  toggleNav(e);
                                  navToggleRef.current.classList.toggle(styles.active);
+                                 window.scrollTo(0, 0);
                               }}
                               className={styles.navLink}
                               to={nav.path}
@@ -134,6 +137,7 @@ function Navbar() {
                                     onClick={(e) => {
                                        toggleNav(e);
                                        navToggleRef.current.classList.toggle(styles.active);
+                                       window.scrollTo(0, 0);
                                     }}
                                     className={styles.navLink}
                                     to={nav.link1.path}
@@ -146,6 +150,7 @@ function Navbar() {
                                     onClick={(e) => {
                                        toggleNav(e);
                                        navToggleRef.current.classList.toggle(styles.active);
+                                       window.scrollTo(0, 0);
                                     }}
                                     className={styles.navLink}
                                     to={nav.link2.path}
@@ -162,6 +167,7 @@ function Navbar() {
                               onClick={(e) => {
                                  toggleNav(e);
                                  navToggleRef.current.classList.toggle(styles.active);
+                                 window.scrollTo(0, 0);
                               }}
                               className={styles.navLink}
                               to={nav.path}
