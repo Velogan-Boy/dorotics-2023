@@ -169,6 +169,10 @@
    transition: all 2s ease;
 }
 
+.scroll_title p span {
+   color: rgb(242, 255, 0);
+}
+
 @keyframes scrollText {
    from {
       transform: translateX(0%);

@@ -55,7 +55,7 @@ const committee_members = {
    ],
 };
 
-const track_titles = ['UAV Technology', 'Robotics and its Applications', 'Drone and Robotics', 'ICT Support systems for Drones and Robotics', 'AI and Data Science'];
+const track_titles = ['AI and Data Science', 'UAV Technology', 'Robotics and its Applications', 'Drone and Robotics', 'ICT Support systems for Drones and Robotics'];
 
 const track_description =
    'Papers related to all aspects of techniques and applications offering insights \
@@ -63,6 +63,21 @@ for Drones and Robotics are welcome. Accepted and registered papers will be publ
 Best Paper from each track will be awarded a cash prize of ₹5000 (per Track). Symposium topics include (but are not limited to) the following:';
 
 const track_topics = {
+   'AI and Data Science': [
+      'ML/DL/Reinforcement/Soft Computing',
+      'Explainable AI',
+      'AI Conversational Systems',
+      'AI for smart city',
+      'AI & Creativity',
+      'AR/ VR',
+      'Image and Video Analytics',
+      'Speech Recognition Systems',
+      'Cognitive Science and AI',
+      'IoT/ Cloud Computing',
+      'Network Security/ Cyber Security',
+      'Social Network Analysis',
+      'Ontology and Semantic Web',
+   ],
    'UAV Technology': [
       'UAV system design',
       'UAV sensor Technology',
@@ -134,24 +149,6 @@ const track_topics = {
       'Recent Trends in Robotics and Computer Integrated Manufacturing',
       'Block Chain Technology and Co-operative Robotics',
    ],
-   'AI and Data Science': [
-      '	ML/DL/Reinforcement/Soft Computing',
-      '	Explainable AI',
-      '	AI Conversational Systems',
-      '	AI for smart city',
-      '	AI & Creativity',
-      '	AR/ VR',
-      '	Image and Video Analytics',
-      '	Speech Recognition Systems',
-      '	Cognitive Science and AI',
-      '	Data Modelling & Analytics/ Data Visualization',
-      '	Big Data Analytics/ Text Mining/ NLP',
-      '	IoT/ Cloud Computing',
-      '	Block Chain Technology/ NFT',
-      '	Network Security/ Cyber Security',
-      '	Social Network Analysis',
-      '	Ontology and Semantic Web',
-   ],
 };
 
 const submissionGuidelines = [
@@ -172,7 +169,7 @@ const submissionFormat = [
 const dates = [
    {
       event: 'Paper Submission Due',
-      date: ['31', 'st', ' Jan 2023'],
+      date: ['15', 'th', ' Feb 2023'],
    },
    {
       event: 'Notification of Acceptance',

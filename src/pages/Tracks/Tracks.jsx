@@ -1,42 +1,73 @@
-import React from 'react'
-import Heading from '../../components/UI/Heading/Heading'
-import SubHeading from '../../components/UI/SubHeading/SubHeading'
+import React from 'react';
+import Heading from '../../components/UI/Heading/Heading';
+import SubHeading from '../../components/UI/SubHeading/SubHeading';
 import Footer from '../../components/Footer/Footer';
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
-import styles from "./Tracks.module.css"
-import { track_description, track_titles, track_topics } from '../../data'
+import styles from './Tracks.module.css';
+import { track_description, track_titles, track_topics } from '../../data';
+
+import { Collapse, IconButton, List, ListItemButton, ListItemText } from '@mui/material';
+
+import { MdOutlineExpandLess, MdOutlineExpandMore } from 'react-icons/md';
 
 const Tracks = () => {
-    return (
-        <div>
-            <Heading text="tracks" />
-            <div className={styles.section}>
-                <SubHeading text="Themes and topics" />
-                <p className={styles.description}>{track_description}</p>
-                {track_titles.map((title, index) => {
-                    const middleIndex = Math.ceil(track_topics[title].length / 2);
-                    const firstHalf = track_topics[title].slice().splice(0, middleIndex);
-                    const secondHalf = track_topics[title].slice().splice(-middleIndex);
+   const [open, setOpen] = React.useState([false, false, false, false, false]);
 
-                    return <div className={styles.track} key={index}>
-                        <h2><i>Track {index + 1}:</i> {title}</h2>
+   const handleClick = (index) => {
+    
+    
+      setOpen((prevState) => {
+         const newState = [...prevState];
+
+         newState[index] = !newState[index];
+
+         return newState;
+      });
+   };
+
+   return (
+      <div>
+         <Heading text="tracks" />
+         <div className={styles.section}>
+            <SubHeading text="Themes and topics" />
+            <p className={styles.description}>{track_description}</p>
+            {track_titles.map((title, index) => {
+               const middleIndex = Math.ceil(track_topics[title].length / 2);
+               const firstHalf = track_topics[title].slice().splice(0, middleIndex);
+               const secondHalf = track_topics[title].slice().splice(-middleIndex);
+
+               return (
+                  <div className={styles.track} key={index}>
+                     <h2 onClick={() => handleClick(index)}>
+                        <i>Track {index + 1}:</i> {title}
+                        <IconButton className={styles.icon}>
+                           {open[index] ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}
+                        </IconButton>
+                     </h2>
+
+                     <Collapse in={open[index]} timeout="auto" unmountOnExit>
                         <div>
-                            <ul>
-                                {firstHalf.map((topic, index) => <li key={index}>{topic}</li>)}
-                            </ul>
-                            <ul>
-                                {secondHalf.map((topic, index) => <li key={index}>{topic}</li>)}
-                            </ul>
+                           <ul>
+                              {firstHalf.map((topic, index) => (
+                                 <li key={index}>{topic}</li>
+                              ))}
+                           </ul>
+                           <ul>
+                              {secondHalf.map((topic, index) => (
+                                 <li key={index}>{topic}</li>
+                              ))}
+                           </ul>
                         </div>
-                    </div>
-                })}
-            </div>
+                     </Collapse>
+                  </div>
+               );
+            })}
+         </div>
 
-            <Footer />
-            <FloatNextButton link="/paper-submission" />
+         <Footer />
+         <FloatNextButton link="/paper-submission" />
+      </div>
+   );
+};
 
-        </div>
-    )
-}
-
-export default Tracks
+export default Tracks;

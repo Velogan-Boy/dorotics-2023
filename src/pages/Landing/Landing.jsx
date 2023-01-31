@@ -26,13 +26,17 @@ function Landing() {
                   <div className={styles.scroll_title}>
                      <div>
                         <p>
+                           {'| '}
+                           <span> Extended Deadline for Call for papers: Feb 15, 2023 </span>
                            {
-                              '. Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
+                              '| Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
                            }
                         </p>
                         <p>
+                           {'| '}
+                           <span> Extended Deadline for Call for papers: Feb 15, 2023 </span>
                            {
-                              '. Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
+                              '| Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
                            }
                         </p>
                      </div>
