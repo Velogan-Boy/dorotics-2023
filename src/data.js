@@ -156,12 +156,12 @@ const submissionGuidelines = [
    'Tables, figures and images should have appropriate captions and be of good quality.',
    'The full article must be submitted as a MS Word file in DOC or DOCX format or in PDF format.',
    'Upload the full paper through the EasyChair platform.',
-   'Any paper which does not follow the guidelines may not be considered for publication in the conference proceedings.',
+   'Any paper which does not follow the guidelines may not be considered for publication in the symposium proceedings.',
 ];
 
 const submissionFormat = [
    'It is required that the manuscript follows the standard IEEE.',
-   'Please click here to download the IEEE paper templates , IEEE - Manuscript Templates for Conference Proceedings',
+   'Please click here to download the IEEE paper templates , IEEE - Manuscript Templates for Symposium Proceedings',
 ];
 
 const dates = [
@@ -206,7 +206,7 @@ const register_details = [
 ];
 
 const publications = [
-   'Accepted and registered papers will be published in conference proceedings.',
+   'Accepted and registered papers will be published in symposium proceedings.',
    'Selected and extended best papers will be considered for possible publication in the \
 following journals based on peer review process by the journals: ',
 ];

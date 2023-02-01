@@ -13,6 +13,7 @@
     letter-spacing: 1.25px;
     line-height: 1.4;
     color: #6b6b6b;
+    text-align: justify;
 }
 
 @media screen and (max-width: 600px) {
