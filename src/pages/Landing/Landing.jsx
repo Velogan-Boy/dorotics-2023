@@ -24,7 +24,7 @@ function Landing() {
             <h1 className={styles.heroText}>
                <span className={styles.s1}>
                   National Symposium on <br />
-                  Emerging Technologies in
+                  Drones and Robotics
                </span>
                <span className={styles.s2}>DOROTICS</span>
                <span className={styles.s3}>2023</span>
