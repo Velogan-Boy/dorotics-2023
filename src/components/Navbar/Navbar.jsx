@@ -40,7 +40,7 @@ function Navbar() {
          path: '/keynote',
       },
       {
-         name: 'Schedule',
+         name: 'Dates & Schedule',
          path: '/schedule',
       },
       {

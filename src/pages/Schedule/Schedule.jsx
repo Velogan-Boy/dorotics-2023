@@ -6,13 +6,12 @@ import DateTable from '../../components/DateTable/DateTable';
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import Footer from '../../components/Footer/Footer';
 
-
 import styles from './Schedule.module.css';
 
 const Schedule = () => {
    return (
       <>
-         <Heading text="Schedule & Dates" />
+         <Heading text="Dates & Schedule" />
          <div className={styles.wrapper1}>
             <SubHeading text="Important Dates" />
             <DateTable />

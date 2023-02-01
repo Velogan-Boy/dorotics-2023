@@ -55,6 +55,30 @@
     border-color: transparent;
 }
 
+s{text-decoration:none;position:relative;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+s::before {
+    top: 50%; 
+    background:red; 
+    opacity:.7;
+    content: '';
+    width: 100%;
+    position: absolute;
+    height:.15em;
+    border-radius:.1em;
+    left: 0%;
+    white-space:nowrap;
+    display: block;
+    transform: rotate(-10deg);  
+}
+s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;width:102%;}
+
+.date > div {
+    display: inline-block;
+}
+
 @media screen and (max-width: 900px) {
 
     .header,

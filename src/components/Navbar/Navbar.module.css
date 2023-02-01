@@ -198,7 +198,7 @@
    position: relative;
 }
 
-.menu>.navLink {
+.menu > .navLink {
    padding-bottom: 20px;
 }
 
@@ -217,7 +217,7 @@
    letter-spacing: 1px;
 }
 
-.menu>.navLink:hover,
+.menu > .navLink:hover,
 .dropdown .navLink:nth-child(2):hover {
    border-bottom: none;
 }

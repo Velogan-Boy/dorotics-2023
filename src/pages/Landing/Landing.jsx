@@ -1,4 +1,5 @@
 import React from 'react';
+import { Snackbar, Alert } from '@mui/material';
 
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import Footer from '../../components/Footer/Footer';
@@ -7,6 +8,16 @@ import Subheading from '../../components/UI/SubHeading/SubHeading';
 import styles from './Landing.module.css';
 
 function Landing() {
+   const [open, setOpen] = React.useState(true);
+
+   const handleClose = (event) => {
+      setOpen(false);
+   };
+
+   const handleClick = () => {
+      setOpen(true);
+   };
+
    return (
       <div className={styles.landing}>
          <div className={styles.bg}>
@@ -26,17 +37,13 @@ function Landing() {
                   <div className={styles.scroll_title}>
                      <div>
                         <p>
-                           {'| '}
-                           <span> Extended Deadline for Call for papers: Feb 15, 2023 </span>
                            {
-                              '| Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
+                              ' |  Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals   '
                            }
                         </p>
                         <p>
-                           {'| '}
-                           <span> Extended Deadline for Call for papers: Feb 15, 2023 </span>
                            {
-                              '| Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals '
+                              ' |  Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals   '
                            }
                         </p>
                      </div>
@@ -44,6 +51,12 @@ function Landing() {
                </div>
             </div>
          </div>
+
+         <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={open} onClose={handleClose} sx={{ transform: 'translateY(4.2rem)' }}>
+            <Alert variant="filled" onClose={handleClose} severity="error" sx={{ width: '100%', fontSize: '1.1rem', backgroundColor: 'var(--accent)' }}>
+               Extended Deadline for Call for papers: Feb 15, 2023
+            </Alert>
+         </Snackbar>
 
          <div className={styles.venueSection}>
             <Subheading text="How to reach" />
@@ -61,6 +74,7 @@ function Landing() {
                </div>
                <div className={styles.map}>
                   <iframe
+                     title="map"
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.8458456108235!2d80.2352517371262!3d13.011240525709582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679f0d20f797%3A0x59f9f10c66e02a19!2sCollege%20of%20Engineering%2C%20Guindy!5e0!3m2!1sen!2sin!4v1674065533135!5m2!1sen!2sin"
                      style={{ border: 0, width: '100%', height: '100%' }}
                      loading="lazy"

@@ -14,8 +14,6 @@ const Tracks = () => {
    const [open, setOpen] = React.useState([false, false, false, false, false]);
 
    const handleClick = (index) => {
-    
-    
       setOpen((prevState) => {
          const newState = [...prevState];
 
@@ -32,28 +30,17 @@ const Tracks = () => {
             <SubHeading text="Themes and topics" />
             <p className={styles.description}>{track_description}</p>
             {track_titles.map((title, index) => {
-               const middleIndex = Math.ceil(track_topics[title].length / 2);
-               const firstHalf = track_topics[title].slice().splice(0, middleIndex);
-               const secondHalf = track_topics[title].slice().splice(-middleIndex);
-
                return (
                   <div className={styles.track} key={index}>
                      <h2 onClick={() => handleClick(index)}>
                         <i>Track {index + 1}:</i> {title}
-                        <IconButton className={styles.icon}>
-                           {open[index] ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}
-                        </IconButton>
+                        <IconButton className={styles.icon}>{open[index] ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}</IconButton>
                      </h2>
 
                      <Collapse in={open[index]} timeout="auto" unmountOnExit>
                         <div>
                            <ul>
-                              {firstHalf.map((topic, index) => (
-                                 <li key={index}>{topic}</li>
-                              ))}
-                           </ul>
-                           <ul>
-                              {secondHalf.map((topic, index) => (
+                              {track_topics[title].map((topic, index) => (
                                  <li key={index}>{topic}</li>
                               ))}
                            </ul>
