@@ -1,5 +1,5 @@
 import React from 'react';
-import { Snackbar, Alert } from '@mui/material';
+import { Snackbar, Alert, Card } from '@mui/material';
 
 import FloatNextButton from '../../components/FloatNextButton/FloatNextButton';
 import Footer from '../../components/Footer/Footer';
@@ -53,9 +53,9 @@ function Landing() {
          </div>
 
          <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={open} onClose={handleClose} sx={{ transform: 'translateY(4.2rem)' }}>
-            <Alert variant="filled" onClose={handleClose} severity="error" sx={{ width: '100%', fontSize: '1.1rem', backgroundColor: 'var(--accent)' }}>
+            <Card style={{fontFamily: 'Roboto', width: '100%', fontSize: '1.1rem', backgroundColor: 'var(--accent)' ,color: '#fff', padding: '1rem'}}>
                Extended Deadline for Call for papers: Feb 15, 2023
-            </Alert>
+            </Card>
          </Snackbar>
 
          <div className={styles.venueSection}>

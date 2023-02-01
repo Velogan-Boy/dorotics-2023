@@ -132,10 +132,8 @@ const track_topics = {
       'Computer Vision for Drone and Robots',
       'Machine Learning /Deep Learning for Drones and Robots',
       'Planning/ Learning/Reasoning for Robots',
-      'Data Modelling and Analytics/ Data Visualization',
       'Data Privacy and Security',
       'AI, Robotics and Automation',
-      'Big Data Analytics/IoT/NLP/ Cloud Computing',
       'Quantum Drones',
       'Autonomous Navigation',
       'AI solutions for mapping of Drones',
@@ -147,7 +145,7 @@ const track_topics = {
       'AI solutions for damage assessment by drones',
       'Role of AI for intelligent robots in Agriculture, Disaster Relief, Entertainment, Industry and thrust sectors',
       'Recent Trends in Robotics and Computer Integrated Manufacturing',
-      'Block Chain Technology and Co-operative Robotics',
+      'Co-operative Robotics',
    ],
 };
 
