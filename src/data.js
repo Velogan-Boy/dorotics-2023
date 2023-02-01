@@ -59,7 +59,7 @@ const track_titles = ['AI and Data Science', 'UAV Technology', 'Robotics and its
 
 const track_description =
    'Papers related to all aspects of techniques and applications offering insights \
-for Drones and Robotics are welcome. Accepted and registered papers will be published in conference proceedings. \
+for Drones and Robotics are welcome. Accepted and registered papers will be published in symposium proceedings. \
 Best Paper from each track will be awarded a cash prize of ₹5000 (per Track). Symposium topics include (but are not limited to) the following:';
 
 const track_topics = {
@@ -166,7 +166,7 @@ const submissionFormat = [
 
 const dates = [
    {
-      event: 'Paper Submission Due',
+      event: 'Full Paper Submission Due',
       date: ['15', 'th', ' Feb 2023'],
    },
    {
@@ -206,7 +206,7 @@ const register_details = [
 ];
 
 const publications = [
-   'Accepted and registered papers will be published in symposium proceedings.',
+   'Accepted & Registered papers will be published in Symposium proceedings with ISBN no.',
    'Selected and extended best papers will be considered for possible publication in the \
 following journals based on peer review process by the journals: ',
 ];
