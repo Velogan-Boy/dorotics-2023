@@ -215,7 +215,7 @@ const journals = [
     recommended for possible publication in the respective scopes of ICTACT Journals. \
     These papers would be selected for publication after the peer review process by ICT \
     Academy. ICT Academy currently publishes five International Journals:',
-   'Selected papers presented will also be published in IMEKO ACTA open journal. (SCOPUS indexed)',
+   'Selected papers presented will also be published in IMEKO ACTA open access journal (SCOPUS indexed)',
 ];
 const subJournals = {
    one: [

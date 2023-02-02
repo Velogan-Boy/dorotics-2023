@@ -23,8 +23,8 @@ function Landing() {
          <div className={styles.bg}>
             <h1 className={styles.heroText}>
                <span className={styles.s1}>
-                  National Symposium on <br />
-                  Drones and Robotics
+                  National Symposium on <br/> emerging technologies in <br />
+                   <span className={styles.s12}> Drones and Robotics </span>
                </span>
                <span className={styles.s2}>DOROTICS</span>
                <span className={styles.s3}>2023</span>
@@ -41,12 +41,12 @@ function Landing() {
                      <div>
                         <p>
                            {
-                              ' |  Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals  |  Selected papers presented will also be published in IMEKO ACTA open journal. (SCOPUS indexed) '
+                              ' |  Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals  |  Selected papers presented will also be published in IMEKO ACTA open access journal (SCOPUS indexed) '
                            }
                         </p>
                         <p>
                            {
-                              ' |  Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals |  Selected papers presented will also be published in IMEKO ACTA open journal. (SCOPUS indexed)   '
+                              ' |  Best Paper from each track will be awarded a cash price of ₹5000 | The best papers selected will be recommended for possible publication in the respective scopes of ICTACT Journals |  Selected papers presented will also be published in IMEKO ACTA open access journal. (SCOPUS indexed)   '
                            }
                         </p>
                      </div>
