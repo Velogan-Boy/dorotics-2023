@@ -189,22 +189,22 @@ const dates = [
 const register_details = [
    {
       category: 'Students',
-      presentation: 'INR 3000/-',
-      coAuthor: 'INR 2000/-',
-      participation: 'INR 2000/-',
+      presentation: 'INR 1500/-',
+      coAuthor: 'INR 1000/-',
+      participation: 'INR 1000/-',
    },
    {
       category: 'Academicians',
-      presentation: 'INR 5000/-',
-      coAuthor: 'INR 3000/-',
-      participation: 'INR 3000/-',
+      presentation: 'INR 2500/-',
+      coAuthor: 'INR 2000/-',
+      participation: 'INR 2000/-',
    },
 
    {
       category: 'Industry',
-      presentation: 'INR 7000/-',
-      coAuthor: 'INR 4000/-',
-      participation: 'INR 4000/-',
+      presentation: 'INR 3500/-',
+      coAuthor: 'INR 3000/-',
+      participation: 'INR 3000/-',
    },
 ];
 
@@ -239,19 +239,19 @@ const register_link = 'The registration link will be updated soon in the website
 
 const keynote_speakers = [
    {
-      photo: '/speakers/dinesh_manoharan.jpg',
+      photo: '/speakers/venkatraman_narayanan.jpg',
       speaker: 'Venkatraman Narayanan',
       description: 'Principal Tech Lead Manager - Motion Planning',
       organisation: 'Aurora, San Francisco Bay Area',
    },
    {
-      photo: '/speakers/sreekumar.png',
+      photo: '/speakers/dinesh_manoharan.jpg',
       speaker: 'Dinesh Manoharan',
       description: 'CTO, Aerospace & Defence Systems,',
       organisation: 'UCAL Technologies',
    },
    {
-      photo: '/speakers/venkatraman_narayanan.jpg',
+      photo: '/speakers/sreekumar.png',
       speaker: 'Prof. Sreekumar M',
       description: 'Professor',
       organisation: 'IIIT Kanchipuram',
