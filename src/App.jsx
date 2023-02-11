@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -13,22 +15,25 @@ import Register from './pages/Register/Register';
 import PaperSubmission from './pages/PaperSubmission/PaperSubmission';
 import Contact from './pages/Contact/Contact';
 import Publications from './pages/Publications/Publications';
-import Schedule from './pages/Schedule/Schedule'
+import Schedule from './pages/Schedule/Schedule';
 
 import './App.css';
 import Keynotes from './pages/Keynotes/Keynotes';
 
 function App() {
    return (
-      <ThemeProvider theme={lightTheme}>
-         <GlobalStyles />
-         <div className="App">
-            <Router>
-               <Navbar />
-               <AllRoutes />
-            </Router>
-         </div>
-      </ThemeProvider>
+      <>
+         <ThemeProvider theme={lightTheme}>
+            <GlobalStyles />
+            <div className="App">
+               <Router>
+                  <Navbar />
+                  <AllRoutes />
+               </Router>
+            </div>
+         </ThemeProvider>
+         <Analytics/>
+      </>
    );
 }
 
