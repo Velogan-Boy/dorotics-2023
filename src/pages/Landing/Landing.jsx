@@ -23,8 +23,8 @@ function Landing() {
          <div className={styles.bg}>
             <h1 className={styles.heroText}>
                <span className={styles.s1}>
-                  National Symposium on <br/> emerging technologies in <br />
-                   <span className={styles.s12}> Drones and Robotics </span>
+                  National Symposium on <br /> emerging technologies in <br />
+                  <span className={styles.s12}> Drones and Robotics </span>
                </span>
                <span className={styles.s2}>DOROTICS</span>
                <span className={styles.s3}>2023</span>
@@ -57,7 +57,7 @@ function Landing() {
 
          <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={open} onClose={handleClose} sx={{ transform: 'translateY(4.2rem)' }}>
             <Card style={{ fontFamily: 'Roboto', width: '100%', fontSize: '1.1rem', backgroundColor: 'var(--accent)', color: '#fff', padding: '1rem' }}>
-               Extended Deadline for Call for papers: Feb 15, 2023
+               Extended Deadline for Call for papers: March 1, 2023
             </Card>
          </Snackbar>
 

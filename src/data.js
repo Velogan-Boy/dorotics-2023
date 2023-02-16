@@ -170,7 +170,7 @@ const submissionFormat = [
 const dates = [
    {
       event: 'Full Paper Submission Due',
-      date: ['15', 'th', ' Feb 2023'],
+      date: ['1', 'st', ' Mar 2023'],
    },
    {
       event: 'Notification of Acceptance',

@@ -10,7 +10,7 @@ const TableItems = (prop) => {
          <tr className={styles.content}>
             <td className={styles.events}>{prop.row.event}</td>
             <td className={styles.date}>
-               {}
+               { }
                {prop.row.date[0]}
                <sup>{prop.row.date[1]}</sup>
                {prop.row.date[2]}
@@ -44,7 +44,7 @@ const DateTable = () => {
                            <td className={styles.date}>
                               <div>
                                  <s>
-                                    31<sup>st</sup> Jan, 2023
+                                    15<sup>th</sup> Feb, 2023
                                  </s>
                               </div>
                               <div>
