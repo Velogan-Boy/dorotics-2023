@@ -174,11 +174,11 @@ const dates = [
    },
    {
       event: 'Notification of Acceptance',
-      date: ['20', 'th', ' Feb 2023'],
+      date: ['10', 'th', ' Mar 2023'],
    },
    {
       event: 'Final camera-ready paper submission',
-      date: ['2', 'nd', ' Mar 2023'],
+      date: ['17', 'th', ' Mar 2023'],
    },
    {
       event: 'Registration',
