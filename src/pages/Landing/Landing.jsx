@@ -31,7 +31,7 @@ function Landing() {
             </h1>
 
             <h3 className={styles.subText}>
-               <span className={styles.sb}>30,31 March & April 1 2023</span>
+               <span className={styles.sb}>April 24 2023</span>
                <span className={styles.sb1}>College of Engineering, Guindy,</span>
                <span className={styles.sb1}>Anna University, Chennai, Tamil Nadu</span>
             </h3>
@@ -57,7 +57,7 @@ function Landing() {
 
          <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={open} onClose={handleClose} sx={{ transform: 'translateY(4.2rem)' }}>
             <Card style={{ fontFamily: 'Roboto', width: '100%', fontSize: '1.1rem', backgroundColor: 'var(--accent)', color: '#fff', padding: '1rem' }}>
-               Extended Deadline for Call for papers: March 1, 2023
+               Extended Deadline for Call for papers: March 20, 2023
             </Card>
          </Snackbar>
 
