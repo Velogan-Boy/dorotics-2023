@@ -44,10 +44,7 @@ const DateTable = () => {
                            <td className={styles.date}>
                               <div>
                                  <s>
-                                    31<sup>st</sup> Jan, 2023
-                                 </s>
-                                 <s>
-                                    15<sup>th</sup> Feb, 2023
+                                    1<sup>st</sup> Mar 2023
                                  </s>
                               </div>
                               <div>

@@ -170,19 +170,19 @@ const submissionFormat = [
 const dates = [
    {
       event: 'Full Paper Submission Due',
-      date: ['1', 'st', ' Mar 2023'],
+      date: ['20', 'th', ' Mar 2023'],
    },
    {
       event: 'Notification of Acceptance',
-      date: ['10', 'th', ' Mar 2023'],
+      date: ['27', 'th', ' Mar 2023'],
    },
    {
       event: 'Final camera-ready paper submission',
-      date: ['17', 'th', ' Mar 2023'],
+      date: ['30', 'th', ' Mar 2023'],
    },
    {
       event: 'Registration',
-      date: ['16', 'th', ' Mar 2023'],
+      date: ['3', 'rd', ' Apr 2023'],
    },
 ];
 
