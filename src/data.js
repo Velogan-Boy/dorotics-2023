@@ -195,14 +195,14 @@ const register_details = [
    },
    {
       category: 'Academicians',
-      presentation: 'INR 2500/-',
+      presentation: 'INR 2000/-',
       coAuthor: 'INR 1000/-',
       participation: 'INR 500/-',
    },
 
    {
       category: 'Industry',
-      presentation: 'INR 3500/-',
+      presentation: 'INR 3000/-',
       coAuthor: 'INR 1000/-',
       participation: 'INR 500/-',
    },
@@ -234,8 +234,6 @@ const subJournals = {
 const register_description =
    'At least one author for each accepted paper must register. If Co-Authors wish to participate in the \
 symposium, need to register under the “co-author participant” category. Registered participants will be provided with kit, food and refreshments.';
-
-const register_link = 'The registration link will be updated soon in the website.';
 
 const keynote_speakers = [
    {
@@ -279,6 +277,5 @@ export {
    dates,
    register_details,
    register_description,
-   submissionFormat,
-   register_link,
+   submissionFormat
 };

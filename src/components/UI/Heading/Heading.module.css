@@ -4,7 +4,7 @@
     margin-top: 4.5rem;
     padding: 1.8rem 0rem 1.8rem 7rem;
     background: var(--goldStripGradient);
-    z-index: 2;
+    z-index: 10;
 }
 
 .zoomWrapper {
