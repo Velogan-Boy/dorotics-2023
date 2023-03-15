@@ -95,6 +95,7 @@ s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;wid
     display: inline-block;
 }
 
+
 @media screen and (max-width: 900px) {
 
     .header,

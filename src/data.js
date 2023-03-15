@@ -189,22 +189,22 @@ const dates = [
 const register_details = [
    {
       category: 'Students',
-      presentation: 'INR 1500/-',
-      coAuthor: 'INR 1000/-',
-      participation: 'INR 1000/-',
+      presentation: 'INR 1000/-',
+      coAuthor: 'INR 500/-',
+      participation: 'INR 500/-',
    },
    {
       category: 'Academicians',
       presentation: 'INR 2500/-',
-      coAuthor: 'INR 2000/-',
-      participation: 'INR 2000/-',
+      coAuthor: 'INR 1000/-',
+      participation: 'INR 500/-',
    },
 
    {
       category: 'Industry',
       presentation: 'INR 3500/-',
-      coAuthor: 'INR 3000/-',
-      participation: 'INR 3000/-',
+      coAuthor: 'INR 1000/-',
+      participation: 'INR 500/-',
    },
 ];
 
