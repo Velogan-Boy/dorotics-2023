@@ -56,8 +56,8 @@ function Landing() {
          </div>
 
          <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={open} onClose={handleClose} sx={{ transform: 'translateY(4.2rem)' }}>
-            <Card style={{ fontFamily: 'Roboto', width: '100%', fontSize: '1.1rem', backgroundColor: 'var(--accent)', color: '#fff', padding: '1rem' }}>
-               Extended Deadline for Call for papers: March 20, 2023
+            <Card style={{ fontFamily: 'Roboto', width: '100%', fontSize: '1.2rem', backgroundColor: 'var(--accent)', color: '#fff', padding: '1rem' }}>
+               Registeration is Open Now !!!
             </Card>
          </Snackbar>
 
