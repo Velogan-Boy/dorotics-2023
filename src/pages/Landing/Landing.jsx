@@ -31,7 +31,7 @@ function Landing() {
             </h1>
 
             <h3 className={styles.subText}>
-               <span className={styles.sb}>April 24 2023</span>
+               <span className={styles.sb}>April 25 2023</span>
                <span className={styles.sb1}>College of Engineering, Guindy,</span>
                <span className={styles.sb1}>Anna University, Chennai, Tamil Nadu</span>
             </h3>
